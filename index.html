@@ -7,12 +7,12 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="manifest" id="pwa-manifest">
-<title>漢字 N5 — Ôn tập</title>
+<title>Êº¢Â≠ó N5 ‚Äî √în t·∫≠p</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ── Themes ─────────────────────────────────── */
+/* ‚îÄ‚îÄ Themes ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 body.day {
   --bg:         #FAF8F3;
   --surface:    #FFFFFF;
@@ -46,7 +46,7 @@ body.night {
   --shadow:     0 2px 16px rgba(0,0,0,0.35);
 }
 
-/* ── Base ─────────────────────────────────────── */
+/* ‚îÄ‚îÄ Base ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { height: 100%; }
 body {
@@ -62,7 +62,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* ── Header ─────────────────────────────────── */
+/* ‚îÄ‚îÄ Header ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 header {
   flex-shrink: 0;
   height: 56px;
@@ -90,7 +90,7 @@ header {
 .btn-icon:active { transform: scale(0.94); }
 #theme-toggle { font-size: 1.05rem; padding: 5px 9px; }
 
-/* ── App Body ───────────────────────────────── */
+/* ‚îÄ‚îÄ App Body ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #app-body {
   flex: 1;
   min-height: 0;
@@ -102,7 +102,7 @@ header {
   padding: 0 14px;
 }
 
-/* ── Stats ──────────────────────────────────── */
+/* ‚îÄ‚îÄ Stats ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #stats-bar {
   flex-shrink: 0;
   padding: 9px 0 6px;
@@ -115,13 +115,13 @@ header {
 .stat-label { font-size: 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; }
 .stat-divider { width: 1px; background: var(--border); align-self: stretch; margin: 3px 0; flex-shrink: 0; }
 
-/* ── Progress ───────────────────────────────── */
+/* ‚îÄ‚îÄ Progress ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #progress-wrap { flex-shrink: 0; padding-bottom: 8px; }
 #progress-bg { height: 4px; background: var(--surface2); border-radius: 2px; overflow: hidden; }
 #progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; }
 #progress-label { font-size: 0.68rem; color: var(--text-muted); margin-top: 5px; text-align: right; }
 
-/* ── Card Area ──────────────────────────────── */
+/* ‚îÄ‚îÄ Card Area ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #card-area {
   flex: 1;
   min-height: 0;
@@ -130,7 +130,7 @@ header {
   justify-content: center;
 }
 
-/* ── Card ───────────────────────────────────── */
+/* ‚îÄ‚îÄ Card ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #card {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 16px; padding: 44px 20px 28px;
@@ -205,7 +205,7 @@ body.day .badge-green  { background: #ddf0dd; color: #2a6030; border-color: #80b
 }
 #word-example.visible { opacity: 1; }
 
-/* ── Session done / No cards ────────────────── */
+/* ‚îÄ‚îÄ Session done / No cards ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #session-done, #no-cards {
   display: none;
   background: var(--surface); border: 1px solid var(--border);
@@ -230,7 +230,7 @@ body.day .badge-green  { background: #ddf0dd; color: #2a6030; border-color: #80b
 .btn-primary:hover { filter: brightness(1.1); }
 .btn-primary:active { transform: scale(0.96); }
 
-/* ── Action Bar ─────────────────────────────── */
+/* ‚îÄ‚îÄ Action Bar ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #action-bar {
   flex-shrink: 0;
   padding: 10px 0 max(12px, env(safe-area-inset-bottom));
@@ -275,7 +275,7 @@ body.day .btn-hard  { background: #fff3e8; border-color: #d09860; color: #804010
 body.day .btn-good  { background: #eaffea; border-color: #80b880; color: #2a6030; }
 body.day .btn-easy  { background: #e8f2ff; border-color: #88b0d8; color: #1a4070; }
 
-/* Hover — desktop only */
+/* Hover ‚Äî desktop only */
 @media (hover: hover) {
   .rate-btn:hover { filter: brightness(1.08); }
   body.night .btn-again:hover { background: #3d2020; }
@@ -288,13 +288,13 @@ body.day .btn-easy  { background: #e8f2ff; border-color: #88b0d8; color: #1a4070
   body.day .btn-easy:hover  { background: #d8eaff; }
 }
 
-/* ── Keyboard hint ──────────────────────────── */
+/* ‚îÄ‚îÄ Keyboard hint ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #kb-hint {
   text-align: center; font-size: 0.68rem; color: var(--text-muted);
   display: none;
 }
 
-/* ── Settings overlay ───────────────────────── */
+/* ‚îÄ‚îÄ Settings overlay ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #settings-overlay {
   display: none; position: fixed; inset: 0;
   background: rgba(0,0,0,0.55); z-index: 100;
@@ -375,7 +375,7 @@ body.day .btn-easy  { background: #e8f2ff; border-color: #88b0d8; color: #1a4070
 }
 hr.sep { border: none; border-top: 1px solid var(--border); }
 
-/* ── Upcoming Panel ─────────────────────────── */
+/* ‚îÄ‚îÄ Upcoming Panel ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 #upcoming-overlay {
   display: none; position: fixed; inset: 0;
   background: rgba(0,0,0,0.45); z-index: 200;
@@ -499,7 +499,7 @@ body.night .ease-ok { color: #d4c840; }
 .up-start-btn:active { transform: scale(0.98); }
 .up-start-btn:disabled { opacity: 0.4; cursor: default; }
 
-/* ── Desktop (≥640px) ───────────────────────── */
+/* ‚îÄ‚îÄ Desktop (‚â•640px) ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ */
 @media (min-width: 640px) {
   header { padding: 0 24px; }
   #app-body { padding: 0 24px; }
@@ -535,7 +535,7 @@ body.night .ease-ok { color: #d4c840; }
   #kb-hint { display: block; }
   .shortcut-section { display: block; }
 
-  /* Rating 1×4 on desktop */
+  /* Rating 1√ó4 on desktop */
   #rating-btns.visible { grid-template-columns: repeat(4, 1fr); }
 
   #card { padding: 44px 40px 36px; min-height: 320px; }
@@ -545,29 +545,29 @@ body.night .ease-ok { color: #d4c840; }
 <body class="day">
 
 <header>
-  <div class="logo">漢字 N5</div>
+  <div class="logo">Êº¢Â≠ó N5</div>
   <div class="header-actions">
-    <button id="theme-toggle" class="btn-icon" onclick="toggleTheme()" title="Chuyển giao diện">🌙</button>
-    <button class="btn-icon" onclick="openUpcoming()" title="Sắp đến hạn">📅</button>
-    <button class="btn-icon" onclick="openSettings()" title="Cài đặt">⚙</button>
+    <button id="theme-toggle" class="btn-icon" onclick="toggleTheme()" title="Chuy·ªÉn giao di·ªán">üåô</button>
+    <button class="btn-icon" onclick="openUpcoming()" title="S·∫Øp ƒë·∫øn h·∫°n">üìÖ</button>
+    <button class="btn-icon" onclick="openSettings()" title="C√†i ƒë·∫∑t">‚öô</button>
   </div>
 </header>
 
 <div id="app-body">
 
   <div id="stats-bar">
-    <div class="stat"><span class="stat-num" id="s-total">0</span><span class="stat-label">Tổng</span></div>
+    <div class="stat"><span class="stat-num" id="s-total">0</span><span class="stat-label">T·ªïng</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num" id="s-due">0</span><span class="stat-label">Hôm nay</span></div>
+    <div class="stat"><span class="stat-num" id="s-due">0</span><span class="stat-label">H√¥m nay</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num" id="s-learned">0</span><span class="stat-label">Đã học</span></div>
+    <div class="stat"><span class="stat-num" id="s-learned">0</span><span class="stat-label">ƒê√£ h·ªçc</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num" id="s-streak">0</span><span class="stat-label">Streak 🔥</span></div>
+    <div class="stat"><span class="stat-num" id="s-streak">0</span><span class="stat-label">Streak üî•</span></div>
   </div>
 
   <div id="progress-wrap">
     <div id="progress-bg"><div id="progress-fill" style="width:0%"></div></div>
-    <div id="progress-label">0 / 0 thẻ hôm nay</div>
+    <div id="progress-label">0 / 0 th·∫ª h√¥m nay</div>
   </div>
 
   <div id="card-area">
@@ -575,9 +575,9 @@ body.night .ease-ok { color: #d4c840; }
     <!-- Flashcard -->
     <div id="card">
       <div class="card-top">
-        <div id="card-type-badge" class="card-type-badge badge-blue">📖 Cách đọc</div>
+        <div id="card-type-badge" class="card-type-badge badge-blue">üìñ C√°ch ƒë·ªçc</div>
         <div class="card-meta">
-          <span id="card-new-badge" class="new-badge" style="display:none">🆕 Mới</span>
+          <span id="card-new-badge" class="new-badge" style="display:none">üÜï M·ªõi</span>
           <span id="card-index" class="card-index"></span>
         </div>
       </div>
@@ -591,35 +591,35 @@ body.night .ease-ok { color: #d4c840; }
 
     <!-- Session complete -->
     <div id="session-done">
-      <div class="done-icon">🎉</div>
-      <div class="done-title">Xong rồi!</div>
-      <div class="done-sub">Đã ôn tập xong tất cả thẻ hôm nay.<br>Hẹn gặp lại vào lần học tiếp theo.</div>
+      <div class="done-icon">üéâ</div>
+      <div class="done-title">Xong r·ªìi!</div>
+      <div class="done-sub">ƒê√£ √¥n t·∫≠p xong t·∫•t c·∫£ th·∫ª h√¥m nay.<br>H·∫πn g·∫∑p l·∫°i v√†o l·∫ßn h·ªçc ti·∫øp theo.</div>
       <div class="done-stats">
-        <div class="done-stat"><span class="done-stat-num" id="done-reviewed">0</span><span class="done-stat-lbl">Đã ôn</span></div>
-        <div class="done-stat"><span class="done-stat-num" id="done-new">0</span><span class="done-stat-lbl">Thẻ mới</span></div>
-        <div class="done-stat"><span class="done-stat-num" id="done-streak">0</span><span class="done-stat-lbl">Streak 🔥</span></div>
+        <div class="done-stat"><span class="done-stat-num" id="done-reviewed">0</span><span class="done-stat-lbl">ƒê√£ √¥n</span></div>
+        <div class="done-stat"><span class="done-stat-num" id="done-new">0</span><span class="done-stat-lbl">Th·∫ª m·ªõi</span></div>
+        <div class="done-stat"><span class="done-stat-num" id="done-streak">0</span><span class="done-stat-lbl">Streak üî•</span></div>
       </div>
-      <button class="btn-primary" onclick="location.reload()">Học tiếp</button>
+      <button class="btn-primary" onclick="location.reload()">H·ªçc ti·∫øp</button>
     </div>
 
     <!-- No cards due -->
     <div id="no-cards">
-      <div class="done-icon">✨</div>
-      <div class="done-title">Không có thẻ nào hôm nay</div>
-      <div class="done-sub">Chưa có thẻ nào đến hạn ôn tập.<br>Hãy quay lại vào ngày mai!</div>
+      <div class="done-icon">‚ú®</div>
+      <div class="done-title">Kh√¥ng c√≥ th·∫ª n√†o h√¥m nay</div>
+      <div class="done-sub">Ch∆∞a c√≥ th·∫ª n√†o ƒë·∫øn h·∫°n √¥n t·∫≠p.<br>H√£y quay l·∫°i v√†o ng√†y mai!</div>
     </div>
 
   </div><!-- end card-area -->
 
   <div id="action-bar">
-    <button id="reveal-btn" onclick="reveal()">👁 Lật thẻ</button>
+    <button id="reveal-btn" onclick="reveal()">üëÅ L·∫≠t th·∫ª</button>
     <div id="rating-btns">
-      <button class="rate-btn btn-again" onclick="rate(1)">😓 Lại<br><span class="key-hint">[1]</span></button>
-      <button class="rate-btn btn-hard"  onclick="rate(2)">😤 Khó<br><span class="key-hint">[2]</span></button>
-      <button class="rate-btn btn-good"  onclick="rate(3)">🙂 Ổn<br><span class="key-hint">[3]</span></button>
-      <button class="rate-btn btn-easy"  onclick="rate(4)">😄 Dễ<br><span class="key-hint">[4]</span></button>
+      <button class="rate-btn btn-again" onclick="rate(1)">üòì L·∫°i<br><span class="key-hint">[1]</span></button>
+      <button class="rate-btn btn-hard"  onclick="rate(2)">üò§ Kh√≥<br><span class="key-hint">[2]</span></button>
+      <button class="rate-btn btn-good"  onclick="rate(3)">üôÇ ·ªîn<br><span class="key-hint">[3]</span></button>
+      <button class="rate-btn btn-easy"  onclick="rate(4)">üòÑ D·ªÖ<br><span class="key-hint">[4]</span></button>
     </div>
-    <div id="kb-hint"><span style="color:var(--text-dim)">Space</span> = lật &nbsp;·&nbsp; <span style="color:var(--text-dim)">1 2 3 4</span> = Lại / Khó / Ổn / Dễ</div>
+    <div id="kb-hint"><span style="color:var(--text-dim)">Space</span> = l·∫≠t &nbsp;¬∑&nbsp; <span style="color:var(--text-dim)">1 2 3 4</span> = L·∫°i / Kh√≥ / ·ªîn / D·ªÖ</div>
   </div><!-- end action-bar -->
 
 </div><!-- end app-body -->
@@ -629,37 +629,37 @@ body.night .ease-ok { color: #d4c840; }
 <div id="upcoming-panel">
   <div class="up-handle"></div>
   <div class="up-header">
-    <span class="up-title">📅 Sắp đến hạn</span>
-    <button class="up-close" onclick="closeUpcoming()">✕</button>
+    <span class="up-title">üìÖ S·∫Øp ƒë·∫øn h·∫°n</span>
+    <button class="up-close" onclick="closeUpcoming()">‚úï</button>
   </div>
 
   <div class="up-summary">
     <div class="up-sum-cell">
       <div class="up-sum-num" id="up-sum-total">0</div>
-      <div class="up-sum-lbl">Hôm nay</div>
+      <div class="up-sum-lbl">H√¥m nay</div>
     </div>
     <div class="up-sum-cell">
       <div class="up-sum-num" id="up-sum-new">0</div>
-      <div class="up-sum-lbl">Mới</div>
+      <div class="up-sum-lbl">M·ªõi</div>
     </div>
     <div class="up-sum-cell">
       <div class="up-sum-num" id="up-sum-review">0</div>
-      <div class="up-sum-lbl">Ôn tập</div>
+      <div class="up-sum-lbl">√în t·∫≠p</div>
     </div>
   </div>
 
   <div class="up-filter-bar">
-    <button class="up-filter-btn active" id="up-filter-all"     onclick="setUpcomingFilter('all')">Tất cả</button>
-    <button class="up-filter-btn"        id="up-filter-reading" onclick="setUpcomingFilter('reading')">📖 Cách đọc</button>
-    <button class="up-filter-btn"        id="up-filter-hanviet" onclick="setUpcomingFilter('hanviet')">🈲 Hán Việt</button>
-    <button class="up-filter-btn"        id="up-filter-meaning" onclick="setUpcomingFilter('meaning')">💬 Nghĩa</button>
+    <button class="up-filter-btn active" id="up-filter-all"     onclick="setUpcomingFilter('all')">T·∫•t c·∫£</button>
+    <button class="up-filter-btn"        id="up-filter-reading" onclick="setUpcomingFilter('reading')">üìñ C√°ch ƒë·ªçc</button>
+    <button class="up-filter-btn"        id="up-filter-hanviet" onclick="setUpcomingFilter('hanviet')">üà≤ H√°n Vi·ªát</button>
+    <button class="up-filter-btn"        id="up-filter-meaning" onclick="setUpcomingFilter('meaning')">üí¨ Nghƒ©a</button>
   </div>
 
   <div class="up-scroll" id="up-scroll"></div>
 
   <div class="up-footer">
     <button class="up-start-btn" id="up-start-btn" onclick="startTodaySession()">
-      ▶ Bắt đầu ôn tập hôm nay
+      ‚ñ∂ B·∫Øt ƒë·∫ßu √¥n t·∫≠p h√¥m nay
     </button>
   </div>
 </div>
@@ -668,20 +668,20 @@ body.night .ease-ok { color: #d4c840; }
 <div id="settings-overlay" onclick="closeSettingsIfOutside(event)">
   <div id="settings-panel">
     <div class="sheet-handle"></div>
-    <div class="settings-title">⚙ Cài đặt</div>
+    <div class="settings-title">‚öô C√†i ƒë·∫∑t</div>
 
     <div class="setting-row">
-      <span class="setting-label">Thẻ mới mỗi ngày</span>
+      <span class="setting-label">Th·∫ª m·ªõi m·ªói ng√†y</span>
       <div class="stepper">
-        <button class="stepper-btn" onclick="stepperChange('cfg-new-per-day',-1,1,99)">−</button>
+        <button class="stepper-btn" onclick="stepperChange('cfg-new-per-day',-1,1,99)">‚àí</button>
         <input type="number" class="stepper-val" id="cfg-new-per-day" value="10" min="1" max="99" onchange="saveSettings()">
         <button class="stepper-btn" onclick="stepperChange('cfg-new-per-day',+1,1,99)">+</button>
       </div>
     </div>
     <div class="setting-row">
-      <span class="setting-label">Thẻ ôn tối đa / ngày</span>
+      <span class="setting-label">Th·∫ª √¥n t·ªëi ƒëa / ng√†y</span>
       <div class="stepper">
-        <button class="stepper-btn" onclick="stepperChange('cfg-review-limit',-10,10,999)">−</button>
+        <button class="stepper-btn" onclick="stepperChange('cfg-review-limit',-10,10,999)">‚àí</button>
         <input type="number" class="stepper-val" id="cfg-review-limit" value="200" min="10" max="999" onchange="saveSettings()">
         <button class="stepper-btn" onclick="stepperChange('cfg-review-limit',+10,10,999)">+</button>
       </div>
@@ -689,443 +689,457 @@ body.night .ease-ok { color: #d4c840; }
 
     <hr class="sep">
     <div class="setting-row" style="align-items:flex-start">
-      <span class="setting-label">Loại thẻ<br><span style="font-size:0.75rem;color:var(--text-muted)">Chỉ tạo queue từ loại đã chọn</span></span>
+      <span class="setting-label">Lo·∫°i th·∫ª<br><span style="font-size:0.75rem;color:var(--text-muted)">Ch·ªâ t·∫°o queue t·ª´ lo·∫°i ƒë√£ ch·ªçn</span></span>
       <div class="checkbox-col">
-        <label class="cb-label"><input type="checkbox" id="cfg-type-reading" checked onchange="saveSettings()"> 📖 Cách đọc</label>
-        <label class="cb-label"><input type="checkbox" id="cfg-type-hanviet" checked onchange="saveSettings()"> 🈲 Hán Việt</label>
-        <label class="cb-label"><input type="checkbox" id="cfg-type-meaning" checked onchange="saveSettings()"> 💬 Nghĩa</label>
+        <label class="cb-label"><input type="checkbox" id="cfg-type-reading" checked onchange="saveSettings()"> üìñ C√°ch ƒë·ªçc</label>
+        <label class="cb-label"><input type="checkbox" id="cfg-type-hanviet" checked onchange="saveSettings()"> üà≤ H√°n Vi·ªát</label>
+        <label class="cb-label"><input type="checkbox" id="cfg-type-meaning" checked onchange="saveSettings()"> üí¨ Nghƒ©a</label>
       </div>
     </div>
 
     <hr class="sep">
     <div class="shortcut-section">
-      <div class="settings-title" style="font-size:0.88rem">Phím tắt</div>
+      <div class="settings-title" style="font-size:0.88rem">Ph√≠m t·∫Øt</div>
       <div class="shortcut-grid">
-        <span class="key">Space</span><span>Lật thẻ</span>
-        <span class="key">1</span><span>Lại — quên hoàn toàn</span>
-        <span class="key">2</span><span>Khó — nhớ nhưng vất vả</span>
-        <span class="key">3</span><span>Ổn — nhớ được</span>
-        <span class="key">4</span><span>Dễ — nhớ rất rõ</span>
+        <span class="key">Space</span><span>L·∫≠t th·∫ª</span>
+        <span class="key">1</span><span>L·∫°i ‚Äî qu√™n ho√†n to√†n</span>
+        <span class="key">2</span><span>Kh√≥ ‚Äî nh·ªõ nh∆∞ng v·∫•t v·∫£</span>
+        <span class="key">3</span><span>·ªîn ‚Äî nh·ªõ ƒë∆∞·ª£c</span>
+        <span class="key">4</span><span>D·ªÖ ‚Äî nh·ªõ r·∫•t r√µ</span>
       </div>
       <hr class="sep">
     </div>
 
-    <button class="btn-primary" style="background:var(--surface2);border:1px solid var(--border);color:var(--red);font-weight:500;min-height:48px" onclick="resetAll()">↺ Xoá toàn bộ tiến trình</button>
-    <button class="settings-close" onclick="closeSettings()">Đóng</button>
+    <hr class="sep">
+    <div class="settings-title" style="font-size:0.88rem">üì≤ ƒê·ªìng b·ªô thi·∫øt b·ªã</div>
+    <div style="font-size:0.78rem;color:var(--text-muted);line-height:1.5;margin-top:-6px">
+      Export t·ª´ thi·∫øt b·ªã n√†y ‚Üí g·ª≠i file ‚Üí Import tr√™n thi·∫øt b·ªã kia.
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="btn-primary" style="flex:1;font-size:0.88rem;padding:12px 8px;min-height:48px" onclick="exportProgress()">‚¨Ü Export</button>
+      <label class="btn-primary" style="flex:1;font-size:0.88rem;padding:12px 8px;min-height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer">
+        ‚¨á Import
+        <input type="file" accept=".json" style="display:none" onchange="importProgress(event)">
+      </label>
+    </div>
+
+    <hr class="sep">
+    <button class="btn-primary" style="background:var(--surface2);border:1px solid var(--border);color:var(--red);font-weight:500;min-height:48px" onclick="resetAll()">‚Ü∫ Xo√° to√†n b·ªô ti·∫øn tr√¨nh</button>
+    <button class="settings-close" onclick="closeSettings()">ƒê√≥ng</button>
   </div>
 </div>
 
 <script>
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // VOCABULARY DATA  (387 entries, 85 single-kanji)
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // hanViet field: present on single-kanji entries only.
 // Card types auto-derived: all entries get [reading, meaning];
 // entries with hanViet also get [hanviet] in between.
-// ───────────────────────────────────────────────
+// ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
 const VOCAB_DATA = [
-  // ── Page 1: Numbers ──────────────────────────
-  {id:"v001",front:"一",reading:"いち",back:"số một (NHẤT)",hanViet:"NHẤT — số một, đơn vị đầu tiên"},
-  {id:"v002",front:"一人で",reading:"ひとりで",back:"một mình / một người"},
-  {id:"v003",front:"一つ",reading:"ひとつ",back:"một cái"},
-  {id:"v004",front:"一日",reading:"いちにち / ついたち",back:"1 ngày / mùng 1"},
-  {id:"v005",front:"二",reading:"に",back:"số hai (NHI)",hanViet:"NHI — số hai"},
-  {id:"v006",front:"二人",reading:"ふたり",back:"hai người"},
-  {id:"v007",front:"二つ",reading:"ふたつ",back:"hai cái"},
-  {id:"v008",front:"二日",reading:"ふつか",back:"2 ngày / mùng 2"},
-  {id:"v009",front:"三",reading:"さん",back:"số ba (TAM)",hanViet:"TAM — số ba"},
-  {id:"v010",front:"三日",reading:"みっか",back:"3 ngày / mùng 3"},
-  {id:"v011",front:"三つ",reading:"みっつ",back:"ba cái"},
-  {id:"v012",front:"三月",reading:"さんがつ",back:"tháng Ba"},
-  {id:"v013",front:"四",reading:"し / よん",back:"số bốn (TỨ)",hanViet:"TỨ — số bốn"},
-  {id:"v014",front:"四日",reading:"よっか",back:"4 ngày / mùng 4"},
-  {id:"v015",front:"四つ",reading:"よっつ",back:"bốn cái"},
-  {id:"v016",front:"四月",reading:"しがつ",back:"tháng Tư"},
-  {id:"v017",front:"五",reading:"ご",back:"số năm (NGŨ)",hanViet:"NGŨ — số năm"},
-  {id:"v018",front:"五日",reading:"いつか",back:"5 ngày / mùng 5"},
-  {id:"v019",front:"五つ",reading:"いつつ",back:"năm cái"},
-  {id:"v020",front:"五月",reading:"ごがつ",back:"tháng Năm"},
-  {id:"v021",front:"六",reading:"ろく",back:"số sáu (LỤC)",hanViet:"LỤC — số sáu"},
-  {id:"v022",front:"六日",reading:"むいか",back:"6 ngày / mùng 6"},
-  {id:"v023",front:"六つ",reading:"むっつ",back:"sáu cái"},
-  {id:"v024",front:"六月",reading:"ろくがつ",back:"tháng Sáu"},
-  {id:"v025",front:"七",reading:"しち / なな",back:"số bảy (THẤT)",hanViet:"THẤT — số bảy"},
-  {id:"v026",front:"七日",reading:"なのか",back:"7 ngày / mùng 7"},
-  {id:"v027",front:"七つ",reading:"ななつ",back:"bảy cái"},
-  {id:"v028",front:"七月",reading:"しちがつ",back:"tháng Bảy"},
-  {id:"v029",front:"八",reading:"はち",back:"số tám (BÁT)",hanViet:"BÁT — số tám"},
-  {id:"v030",front:"八日",reading:"ようか",back:"8 ngày / mùng 8"},
-  {id:"v031",front:"八つ",reading:"やっつ",back:"tám cái"},
-  {id:"v032",front:"八月",reading:"はちがつ",back:"tháng Tám"},
-  {id:"v033",front:"九",reading:"く / きゅう",back:"số chín (CỬU)",hanViet:"CỬU — số chín"},
-  {id:"v034",front:"九日",reading:"ここのか",back:"9 ngày / mùng 9"},
-  {id:"v035",front:"九月",reading:"くがつ",back:"tháng Chín"},
-  {id:"v036",front:"十",reading:"じゅう / とお",back:"số mười (THẬP)",hanViet:"THẬP — số mười"},
-  {id:"v037",front:"十日",reading:"とおか",back:"10 ngày / mùng 10"},
-  {id:"v038",front:"十分な",reading:"じゅうぶんな",back:"đầy đủ, trọn vẹn"},
-  {id:"v039",front:"百",reading:"ひゃく",back:"một trăm (BÁCH)",hanViet:"BÁCH — một trăm"},
-  {id:"v040",front:"三百",reading:"さんびゃく",back:"ba trăm (300)"},
-  {id:"v041",front:"六百",reading:"ろっぴゃく",back:"sáu trăm (600)"},
-  {id:"v042",front:"千",reading:"せん",back:"một nghìn (THIÊN)",hanViet:"THIÊN — một nghìn"},
-  {id:"v043",front:"三千",reading:"さんぜん",back:"ba nghìn (3.000)"},
-  {id:"v044",front:"八千",reading:"はっせん",back:"tám nghìn (8.000)"},
-  {id:"v045",front:"万",reading:"まん",back:"mười nghìn (VẠN)",hanViet:"VẠN — mười nghìn"},
-  {id:"v046",front:"一万",reading:"いちまん",back:"1 vạn (10.000)"},
-  {id:"v047",front:"万引き",reading:"まんびき",back:"ăn cắp vặt"},
-  {id:"v048",front:"円",reading:"えん",back:"yên Nhật (VIÊN)",hanViet:"VIÊN — đồng tiền hình tròn"},
-  {id:"v049",front:"五円",reading:"ごえん",back:"5 yên"},
-  // ── Page 2: Moon / Morning / Water / Tree / Metal ──
-  {id:"v050",front:"月",reading:"つき",back:"mặt trăng (NGUYỆT)",hanViet:"NGUYỆT — mặt trăng, tháng"},
-  {id:"v051",front:"月よう日",reading:"げつようび",back:"thứ Hai"},
-  {id:"v052",front:"今月",reading:"こんげつ",back:"tháng này"},
-  {id:"v053",front:"明るい",reading:"あかるい",back:"tươi sáng, sáng sủa, vui vẻ"},
-  {id:"v054",front:"説明します",reading:"せつめいします",back:"giải thích, chỉ dẫn"},
-  {id:"v055",front:"発明します",reading:"はつめいします",back:"phát minh"},
-  {id:"v056",front:"朝",reading:"あさ",back:"buổi sáng (TRIỀU)",hanViet:"TRIỀU — buổi sáng, triều đại"},
-  {id:"v057",front:"毎朝",reading:"まいあさ",back:"mỗi sáng, hằng sáng"},
-  {id:"v058",front:"朝ごはん",reading:"あさごはん",back:"bữa sáng"},
-  {id:"v059",front:"水",reading:"みず",back:"nước (THỦY)",hanViet:"THỦY — nước"},
-  {id:"v060",front:"水よう日",reading:"すいようび",back:"thứ Tư"},
-  {id:"v061",front:"水泳",reading:"すいえい",back:"bơi lội"},
-  {id:"v062",front:"氷",reading:"こおり",back:"băng, đá (BĂNG)",hanViet:"BĂNG — băng đá"},
-  {id:"v063",front:"かき氷",reading:"かきごおり",back:"món đá bào"},
-  {id:"v064",front:"泳ぎます",reading:"およぎます",back:"bơi"},
-  {id:"v065",front:"本",reading:"ほん",back:"sách (BẢN)",hanViet:"BẢN — gốc rễ, sách"},
-  {id:"v066",front:"日本",reading:"にほん",back:"Nhật Bản"},
-  {id:"v067",front:"本物",reading:"ほんもの",back:"hàng thật"},
-  {id:"v068",front:"体",reading:"からだ",back:"cơ thể (THỂ)",hanViet:"THỂ — thân thể"},
-  {id:"v069",front:"体育館",reading:"たいいくかん",back:"phòng thể chất"},
-  {id:"v070",front:"体重",reading:"たいじゅう",back:"cân nặng"},
-  {id:"v071",front:"休み",reading:"やすみ",back:"nghỉ, ngày nghỉ"},
-  {id:"v072",front:"夏休み",reading:"なつやすみ",back:"nghỉ hè"},
-  {id:"v073",front:"連休",reading:"れんきゅう",back:"kì nghỉ, đợt nghỉ dài"},
-  {id:"v074",front:"火",reading:"ひ",back:"lửa (HỎA)",hanViet:"HỎA — lửa"},
-  {id:"v075",front:"花火",reading:"はなび",back:"pháo hoa"},
-  {id:"v076",front:"火よう日",reading:"かようび",back:"thứ Ba"},
-  {id:"v077",front:"畑",reading:"はたけ",back:"cánh đồng"},
-  {id:"v078",front:"秋",reading:"あき",back:"mùa thu (THU)",hanViet:"THU — mùa thu"},
-  {id:"v079",front:"木",reading:"き",back:"cây, cây cối (MỘC)",hanViet:"MỘC — cây, gỗ"},
-  {id:"v080",front:"木よう日",reading:"もくようび",back:"thứ Năm"},
-  {id:"v081",front:"林",reading:"はやし",back:"rừng (LÂM)",hanViet:"LÂM — rừng"},
-  {id:"v082",front:"森林",reading:"しんりん",back:"vùng rừng rậm"},
-  {id:"v083",front:"森",reading:"もり",back:"rừng rậm (SÂM)",hanViet:"SÂM — rừng rậm"},
-  {id:"v084",front:"お金",reading:"おかね",back:"tiền"},
-  {id:"v085",front:"金よう日",reading:"きんようび",back:"thứ Sáu"},
-  {id:"v086",front:"貯金",reading:"ちょきん",back:"tiền tiết kiệm"},
-  {id:"v087",front:"銀行員",reading:"ぎんこういん",back:"nhân viên ngân hàng"},
-  {id:"v088",front:"銀行",reading:"ぎんこう",back:"ngân hàng"},
-  {id:"v089",front:"地下鉄",reading:"ちかてつ",back:"tàu điện ngầm"},
-  // ── Page 3: Characters / Women / Study ────────
-  {id:"v090",front:"子ども",reading:"こども",back:"trẻ con"},
-  {id:"v091",front:"息子",reading:"むすこ",back:"con trai"},
-  {id:"v092",front:"お菓子",reading:"おかし",back:"kẹo bánh"},
-  {id:"v093",front:"漢字",reading:"かんじ",back:"chữ Hán"},
-  {id:"v094",front:"字",reading:"じ",back:"chữ, ký tự (TỰ)",hanViet:"TỰ — chữ, ký tự"},
-  {id:"v095",front:"学生",reading:"がくせい",back:"học sinh"},
-  {id:"v096",front:"大学",reading:"だいがく",back:"trường đại học"},
-  {id:"v097",front:"学校",reading:"がっこう",back:"trường học"},
-  {id:"v098",front:"女の人",reading:"おんなのひと",back:"cô gái, phụ nữ"},
-  {id:"v099",front:"彼女",reading:"かのじょ",back:"cô ấy / bạn gái"},
-  {id:"v100",front:"女性",reading:"じょせい",back:"nữ giới, phụ nữ"},
-  {id:"v101",front:"好きな",reading:"すきな",back:"thích"},
-  {id:"v102",front:"大好きな",reading:"だいすきな",back:"rất thích, yêu"},
-  {id:"v103",front:"安い",reading:"やすい",back:"rẻ"},
-  {id:"v104",front:"安心します",reading:"あんしんします",back:"an tâm"},
-  {id:"v105",front:"安全",reading:"あんぜん",back:"an toàn"},
-  {id:"v106",front:"半",reading:"はん",back:"một nửa, rưỡi (BÁN)",hanViet:"BÁN — một nửa, phân nửa"},
-  {id:"v107",front:"半分",reading:"はんぶん",back:"một nửa, nửa phần"},
-  {id:"v108",front:"半年",reading:"はんとし",back:"nửa năm"},
-  {id:"v109",front:"米",reading:"こめ",back:"gạo (MỄ)",hanViet:"MỄ — gạo, lúa"},
-  {id:"v110",front:"来ます",reading:"きます",back:"đến, tới"},
-  {id:"v111",front:"未来",reading:"みらい",back:"tương lai"},
-  {id:"v112",front:"来週",reading:"らいしゅう",back:"tuần sau"},
-  {id:"v113",front:"お寺",reading:"おてら",back:"đền chùa"},
-  {id:"v114",front:"時計",reading:"とけい",back:"đồng hồ"},
-  {id:"v115",front:"何時",reading:"なんじ",back:"mấy giờ"},
-  {id:"v116",front:"待ちます",reading:"まちます",back:"chờ, đợi"},
-  {id:"v117",front:"招待します",reading:"しょうたいします",back:"đối đãi, tiếp đãi"},
-  {id:"v118",front:"目",reading:"め",back:"mắt, con mắt (MỤC)",hanViet:"MỤC — mắt, mục tiêu"},
-  {id:"v119",front:"目的",reading:"もくてき",back:"mục đích"},
-  {id:"v120",front:"自転車",reading:"じてんしゃ",back:"xe đạp"},
-  {id:"v121",front:"自分で",reading:"じぶんで",back:"tự mình"},
-  {id:"v122",front:"自己紹介",reading:"じこしょうかい",back:"giới thiệu bản thân"},
-  {id:"v123",front:"見ます",reading:"みます",back:"nhìn, ngắm"},
-  {id:"v124",front:"見えます",reading:"みえます",back:"nhìn thấy"},
-  {id:"v125",front:"お花見",reading:"おはなみ",back:"ngắm hoa anh đào"},
-  {id:"v126",front:"貝",reading:"かい",back:"con sò (BỐI)",hanViet:"BỐI — vỏ sò, tiền cổ"},
-  {id:"v127",front:"買います",reading:"かいます",back:"mua"},
-  {id:"v128",front:"買い物します",reading:"かいものします",back:"mua sắm, shopping"},
-  {id:"v129",front:"道具",reading:"どうぐ",back:"dụng cụ"},
-  {id:"v130",front:"具合",reading:"ぐあい",back:"tình trạng, trạng thái"},
-  // ── Page 4: Directions / Body / Sound ─────────
-  {id:"v131",front:"右",reading:"みぎ",back:"bên phải (HỮU)",hanViet:"HỮU — phải, bên phải"},
-  {id:"v132",front:"左",reading:"ひだり",back:"bên trái (TẢ)",hanViet:"TẢ — trái, bên trái"},
-  {id:"v133",front:"友達",reading:"ともだち",back:"bạn bè"},
-  {id:"v134",front:"立ちます",reading:"たちます",back:"đứng"},
-  {id:"v135",front:"立入禁止",reading:"たちいりきんし",back:"cấm vào"},
-  {id:"v136",front:"音",reading:"おと",back:"âm thanh (ÂM)",hanViet:"ÂM — âm thanh, tiếng"},
-  {id:"v137",front:"音楽",reading:"おんがく",back:"âm nhạc"},
-  {id:"v138",front:"発音",reading:"はつおん",back:"phát âm"},
-  {id:"v139",front:"暗い",reading:"くらい",back:"tối, u ám"},
-  {id:"v140",front:"土よう日",reading:"どようび",back:"thứ Bảy"},
-  {id:"v141",front:"お土産",reading:"おみやげ",back:"quà quê, đồ lưu niệm"},
-  {id:"v142",front:"上",reading:"うえ",back:"trên, bên trên (THƯỢNG)",hanViet:"THƯỢNG — trên, bề trên"},
-  {id:"v143",front:"上着",reading:"うわぎ",back:"áo khoác"},
-  {id:"v144",front:"屋上",reading:"おくじょう",back:"sân thượng"},
-  {id:"v145",front:"上手な",reading:"じょうずな",back:"giỏi, thành thạo"},
-  {id:"v146",front:"下",reading:"した",back:"dưới, bên dưới (HẠ)",hanViet:"HẠ — dưới, phía dưới"},
-  {id:"v147",front:"下着",reading:"したぎ",back:"quần áo lót"},
-  {id:"v148",front:"下手な",reading:"へたな",back:"yếu, kém"},
-  {id:"v149",front:"不便な",reading:"ふべんな",back:"bất tiện"},
-  {id:"v150",front:"大きい",reading:"おおきい",back:"to, lớn"},
-  {id:"v151",front:"大人",reading:"おとな",back:"người trưởng thành"},
-  {id:"v152",front:"大丈夫",reading:"だいじょうぶ",back:"không sao, ổn"},
-  {id:"v153",front:"大学生",reading:"だいがくせい",back:"sinh viên đại học"},
-  {id:"v154",front:"犬",reading:"いぬ",back:"con chó (KHUYỂN)",hanViet:"KHUYỂN — chó"},
-  {id:"v155",front:"太い",reading:"ふとい",back:"béo; dày; to"},
-  {id:"v156",front:"太ります",reading:"ふとります",back:"béo lên"},
-  {id:"v157",front:"太陽",reading:"たいよう",back:"mặt trời"},
-  {id:"v158",front:"言います",reading:"いいます",back:"nói"},
-  {id:"v159",front:"言語",reading:"げんご",back:"ngôn ngữ"},
-  {id:"v160",front:"話します",reading:"はなします",back:"nói chuyện"},
-  {id:"v161",front:"話",reading:"はなし",back:"câu chuyện"},
-  {id:"v162",front:"電話します",reading:"でんわします",back:"gọi điện"},
-  {id:"v163",front:"英語",reading:"えいご",back:"tiếng Anh"},
-  {id:"v164",front:"日本語",reading:"にほんご",back:"tiếng Nhật"},
-  {id:"v165",front:"耳",reading:"みみ",back:"tai (NHĨ)",hanViet:"NHĨ — tai"},
-  {id:"v166",front:"専門",reading:"せんもん",back:"chuyên môn"},
-  {id:"v167",front:"入門",reading:"にゅうもん",back:"nhập môn"},
-  {id:"v168",front:"聞きます",reading:"ききます",back:"nghe"},
-  {id:"v169",front:"聞こえます",reading:"きこえます",back:"nghe thấy"},
-  {id:"v170",front:"新聞",reading:"しんぶん",back:"báo, tờ báo"},
-  {id:"v171",front:"間",reading:"あいだ / ま",back:"giữa, ở giữa (GIAN)",hanViet:"GIAN — khoảng giữa"},
-  {id:"v172",front:"間に合います",reading:"まにあいます",back:"kịp (giờ)"},
-  // ── Page 5: Mountain / Travel / People ────────
-  {id:"v173",front:"山",reading:"やま",back:"núi (SƠN)",hanViet:"SƠN — núi"},
-  {id:"v174",front:"火山",reading:"かざん",back:"núi lửa"},
-  {id:"v175",front:"出ます",reading:"でます",back:"đi ra, xuất phát"},
-  {id:"v176",front:"出口",reading:"でぐち",back:"cửa ra, lối ra"},
-  {id:"v177",front:"輸出します",reading:"ゆしゅつします",back:"xuất khẩu"},
-  {id:"v178",front:"岩",reading:"いわ",back:"đá, tảng đá (NHAM)",hanViet:"NHAM — đá, tảng đá"},
-  {id:"v179",front:"あの方",reading:"あのかた",back:"vị kia (cách nói lịch sự)"},
-  {id:"v180",front:"夕方",reading:"ゆうがた",back:"chiều tối, hoàng hôn"},
-  {id:"v181",front:"方法",reading:"ほうほう",back:"phương pháp"},
-  {id:"v182",front:"旅行",reading:"りょこう",back:"du lịch"},
-  {id:"v183",front:"旅館",reading:"りょかん",back:"nhà trọ kiểu Nhật"},
-  {id:"v184",front:"家族",reading:"かぞく",back:"gia đình"},
-  {id:"v185",front:"何歳",reading:"なんさい",back:"mấy tuổi"},
-  {id:"v186",front:"何",reading:"なに / なん",back:"cái gì, bao nhiêu"},
-  {id:"v187",front:"荷物",reading:"にもつ",back:"hành lý, đồ đạc"},
-  {id:"v188",front:"歌",reading:"うた",back:"bài hát (CA)",hanViet:"CA — bài hát, ca"},
-  {id:"v189",front:"歌います",reading:"うたいます",back:"hát, ca hát"},
-  {id:"v190",front:"歌手",reading:"かしゅ",back:"ca sĩ"},
-  {id:"v191",front:"父",reading:"ちち",back:"bố (PHỤ)",hanViet:"PHỤ — cha, bố"},
-  {id:"v192",front:"祖父",reading:"そふ",back:"ông (nội/ngoại)"},
-  {id:"v193",front:"交通",reading:"こうつう",back:"giao thông"},
-  {id:"v194",front:"交差点",reading:"こうさてん",back:"ngã tư"},
-  {id:"v195",front:"交番",reading:"こうばん",back:"đồn cảnh sát"},
-  {id:"v196",front:"高校",reading:"こうこう",back:"trường cấp ba"},
-  {id:"v197",front:"小学校",reading:"しょうがっこう",back:"trường tiểu học"},
-  {id:"v198",front:"口",reading:"くち",back:"cái miệng (KHẨU)",hanViet:"KHẨU — miệng, cửa"},
-  {id:"v199",front:"入り口",reading:"いりぐち",back:"cửa vào, lối vào"},
-  {id:"v200",front:"人口",reading:"じんこう",back:"dân số"},
-  {id:"v201",front:"中",reading:"なか",back:"bên trong (TRUNG)",hanViet:"TRUNG — giữa, trong"},
-  {id:"v202",front:"中国",reading:"ちゅうごく",back:"Trung Quốc"},
-  {id:"v203",front:"世界中",reading:"せかいじゅう",back:"khắp thế giới"},
-  {id:"v204",front:"古い",reading:"ふるい",back:"cũ, cổ"},
-  {id:"v205",front:"足",reading:"あし",back:"chân (TÚC)",hanViet:"TÚC — chân, đủ"},
-  {id:"v206",front:"足ります",reading:"たります",back:"đủ, đủ rồi"},
-  {id:"v207",front:"良い",reading:"よい",back:"tốt"},
-  {id:"v208",front:"食べます",reading:"たべます",back:"ăn"},
-  {id:"v209",front:"食べ物",reading:"たべもの",back:"đồ ăn, thức ăn"},
-  {id:"v210",front:"食堂",reading:"しょくどう",back:"nhà ăn, căng tin"},
-  {id:"v211",front:"飲みます",reading:"のみます",back:"uống"},
-  {id:"v212",front:"飲み物",reading:"のみもの",back:"đồ uống, thức uống"},
-  {id:"v213",front:"朝ご飯",reading:"あさごはん",back:"bữa sáng"},
-  {id:"v214",front:"昼ご飯",reading:"ひるごはん",back:"bữa trưa"},
-  // ── Page 6: Birds / Transportation ───────────
-  {id:"v215",front:"鳥",reading:"とり",back:"con chim (ĐIỂU)",hanViet:"ĐIỂU — chim"},
-  {id:"v216",front:"焼き鳥",reading:"やきとり",back:"thịt gà xiên nướng"},
-  {id:"v217",front:"馬",reading:"うま",back:"con ngựa (MÃ)",hanViet:"MÃ — ngựa"},
-  {id:"v218",front:"駅",reading:"えき",back:"nhà ga (DỊCH)",hanViet:"DỊCH — trạm, nhà ga"},
-  {id:"v219",front:"駅前",reading:"えきまえ",back:"trước nhà ga"},
-  {id:"v220",front:"富士山",reading:"ふじさん",back:"núi Phú Sĩ"},
-  {id:"v221",front:"売り場",reading:"うりば",back:"quầy bán hàng"},
-  {id:"v222",front:"売ります",reading:"うります",back:"bán, bán hàng"},
-  {id:"v223",front:"売れます",reading:"うれます",back:"bán chạy"},
-  {id:"v224",front:"読みます",reading:"よみます",back:"đọc"},
-  {id:"v225",front:"読み方",reading:"よみかた",back:"cách đọc"},
-  {id:"v226",front:"田舎",reading:"いなか",back:"vùng nông thôn"},
-  {id:"v227",front:"男の人",reading:"おとこのひと",back:"người con trai"},
-  {id:"v228",front:"男の子",reading:"おとこのこ",back:"bé trai"},
-  {id:"v229",front:"男性",reading:"だんせい",back:"nam giới"},
-  {id:"v230",front:"町",reading:"まち",back:"thị trấn, con phố"},
-  {id:"v231",front:"魚",reading:"さかな",back:"con cá (NGƯ)",hanViet:"NGƯ — cá"},
-  {id:"v232",front:"人",reading:"ひと",back:"con người (NHÂN)",hanViet:"NHÂN — người"},
-  {id:"v233",front:"日本人",reading:"にほんじん",back:"người Nhật"},
-  {id:"v234",front:"人形",reading:"にんぎょう",back:"búp bê"},
-  {id:"v235",front:"入ります",reading:"はいります",back:"vào, đi vào"},
-  {id:"v236",front:"入院します",reading:"にゅういんします",back:"nhập viện"},
-  {id:"v237",front:"永久",reading:"えいきゅう",back:"vĩnh cửu"},
-  {id:"v238",front:"世界",reading:"せかい",back:"thế giới"},
-  {id:"v239",front:"東",reading:"ひがし",back:"phía Đông (ĐÔNG)",hanViet:"ĐÔNG — phía đông"},
-  {id:"v240",front:"東京",reading:"とうきょう",back:"thành phố Tokyo"},
-  {id:"v241",front:"映画",reading:"えいが",back:"phim, phim ảnh"},
-  {id:"v242",front:"映画館",reading:"えいがかん",back:"rạp chiếu phim"},
-  {id:"v243",front:"車",reading:"くるま",back:"xe hơi, ô tô (XA)",hanViet:"XA — xe"},
-  {id:"v244",front:"電車",reading:"でんしゃ",back:"tàu điện"},
-  {id:"v245",front:"重い",reading:"おもい",back:"nặng"},
-  {id:"v246",front:"重さ",reading:"おもさ",back:"độ nặng, trọng lượng"},
-  {id:"v247",front:"運びます",reading:"はこびます",back:"vận chuyển, chuyên chở"},
-  {id:"v248",front:"運転します",reading:"うんてんします",back:"lái xe"},
-  {id:"v249",front:"運動",reading:"うんどう",back:"vận động, thể dục"},
-  {id:"v250",front:"運転手",reading:"うんてんしゅ",back:"người lái xe"},
-  {id:"v251",front:"軽い",reading:"かるい",back:"nhẹ"},
-  // ── Page 7: Mother / Sea / Small ──────────────
-  {id:"v252",front:"お母さん",reading:"おかあさん",back:"mẹ"},
-  {id:"v253",front:"母の日",reading:"ははのひ",back:"ngày của mẹ"},
-  {id:"v254",front:"祖母",reading:"そぼ",back:"bà (nội/ngoại)"},
-  {id:"v255",front:"毎日",reading:"まいにち",back:"hằng ngày, mỗi ngày"},
-  {id:"v256",front:"毎晩",reading:"まいばん",back:"hằng tối, mỗi tối"},
-  {id:"v257",front:"海",reading:"うみ",back:"biển (HẢI)",hanViet:"HẢI — biển"},
-  {id:"v258",front:"海外",reading:"かいがい",back:"nước ngoài (hải ngoại)"},
-  {id:"v259",front:"海岸",reading:"かいがん",back:"bờ biển"},
-  {id:"v260",front:"小さい",reading:"ちいさい",back:"nhỏ, bé"},
-  {id:"v261",front:"小説",reading:"しょうせつ",back:"tiểu thuyết"},
-  {id:"v262",front:"小学生",reading:"しょうがくせい",back:"học sinh tiểu học"},
-  {id:"v263",front:"少し",reading:"すこし",back:"ít, một chút"},
-  {id:"v264",front:"少ない",reading:"すくない",back:"ít (về số lượng)"},
-  {id:"v265",front:"内",reading:"うち",back:"bên trong, nội (NỘI)",hanViet:"NỘI — trong, nội"},
-  {id:"v266",front:"案内",reading:"あんない",back:"hướng dẫn, chỉ dẫn"},
-  {id:"v267",front:"肉",reading:"にく",back:"thịt (NHỤC)",hanViet:"NHỤC — thịt"},
-  {id:"v268",front:"豚肉",reading:"ぶたにく",back:"thịt lợn"},
-  {id:"v269",front:"牛肉",reading:"ぎゅうにく",back:"thịt bò"},
-  {id:"v270",front:"病院",reading:"びょういん",back:"bệnh viện"},
-  {id:"v271",front:"病気",reading:"びょうき",back:"bệnh tật, bị ốm"},
-  {id:"v272",front:"同じ",reading:"おなじ",back:"giống, giống nhau"},
-  {id:"v273",front:"花",reading:"はな",back:"hoa (HOA)",hanViet:"HOA — hoa"},
-  {id:"v274",front:"お茶",reading:"おちゃ",back:"trà"},
-  {id:"v275",front:"喫茶店",reading:"きっさてん",back:"quán cà phê, quán giải khát"},
-  {id:"v276",front:"茶道",reading:"さどう",back:"trà đạo"},
-  {id:"v277",front:"草",reading:"くさ",back:"cỏ, cây cỏ (THẢO)",hanViet:"THẢO — cỏ, thảo mộc"},
-  {id:"v278",front:"西",reading:"にし",back:"phía Tây (TÂY)",hanViet:"TÂY — phía tây"},
-  {id:"v279",front:"お酒",reading:"おさけ",back:"rượu"},
-  {id:"v280",front:"梅酒",reading:"うめしゅ",back:"rượu mơ"},
-  {id:"v281",front:"雨",reading:"あめ",back:"mưa (VŨ)",hanViet:"VŨ — mưa"},
-  {id:"v282",front:"電気",reading:"でんき",back:"điện, bóng đèn"},
-  {id:"v283",front:"電話",reading:"でんわ",back:"điện thoại"},
-  {id:"v284",front:"雪",reading:"ゆき",back:"tuyết (TUYẾT)",hanViet:"TUYẾT — tuyết"},
-  {id:"v285",front:"雲",reading:"くも",back:"mây (VÂN)",hanViet:"VÂN — mây"},
-  // ── Page 8: Long / Hair / Body ────────────────
-  {id:"v286",front:"長い",reading:"ながい",back:"dài"},
-  {id:"v287",front:"長生き",reading:"ながいき",back:"sống lâu"},
-  {id:"v288",front:"課長",reading:"かちょう",back:"trưởng nhóm, trưởng phòng"},
-  {id:"v289",front:"社長",reading:"しゃちょう",back:"giám đốc"},
-  {id:"v290",front:"髪の毛",reading:"かみのけ",back:"tóc"},
-  {id:"v291",front:"前髪",reading:"まえがみ",back:"tóc mái"},
-  {id:"v292",front:"お手洗い",reading:"おてあらい",back:"nhà vệ sinh"},
-  {id:"v293",front:"毛",reading:"け",back:"lông (MAO)",hanViet:"MAO — lông, tóc"},
-  {id:"v294",front:"毛糸",reading:"けいと",back:"sợi len, len"},
-  {id:"v295",front:"牛",reading:"うし",back:"con bò (NGƯU)",hanViet:"NGƯU — trâu, bò"},
-  {id:"v296",front:"牛乳",reading:"ぎゅうにゅう",back:"sữa bò"},
-  {id:"v297",front:"果物",reading:"くだもの",back:"hoa quả"},
-  {id:"v298",front:"建物",reading:"たてもの",back:"tòa nhà, công trình"},
-  {id:"v299",front:"動物",reading:"どうぶつ",back:"động vật"},
-  {id:"v300",front:"午前",reading:"ごぜん",back:"sáng (trước 12h)"},
-  {id:"v301",front:"午後",reading:"ごご",back:"chiều (sau 12h)"},
-  {id:"v302",front:"来年",reading:"らいねん",back:"năm sau"},
-  {id:"v303",front:"一年",reading:"いちねん",back:"1 năm"},
-  {id:"v304",front:"生きる",reading:"いきる",back:"sống"},
-  {id:"v305",front:"生まれる",reading:"うまれる",back:"được sinh ra"},
-  {id:"v306",front:"生活",reading:"せいかつ",back:"cuộc sống"},
-  {id:"v307",front:"元気な",reading:"げんきな",back:"khỏe mạnh"},
-  {id:"v308",front:"天気",reading:"てんき",back:"thời tiết"},
-  {id:"v309",front:"気持ち",reading:"きもち",back:"cảm xúc, tâm trạng"},
-  {id:"v310",front:"名前",reading:"なまえ",back:"tên"},
-  {id:"v311",front:"帰ります",reading:"かえります",back:"trở về, về nhà"},
-  {id:"v312",front:"お帰りなさい",reading:"おかえりなさい",back:"mừng bạn trở về"},
-  {id:"v313",front:"新しい",reading:"あたらしい",back:"mới"},
-  {id:"v314",front:"親",reading:"おや",back:"bố/mẹ (THÂN)",hanViet:"THÂN — thân thiết, bố mẹ"},
-  {id:"v315",front:"親切な",reading:"しんせつな",back:"tốt bụng, tử tế"},
-  {id:"v316",front:"両親",reading:"りょうしん",back:"bố mẹ"},
-  {id:"v317",front:"妹",reading:"いもうと",back:"em gái (MUỘI)",hanViet:"MUỘI — em gái"},
-  {id:"v318",front:"姉",reading:"あね",back:"chị gái (TỶ)",hanViet:"TỶ — chị gái"},
-  {id:"v319",front:"姉妹",reading:"しまい",back:"chị em"},
-  {id:"v320",front:"夕方",reading:"ゆうがた",back:"hoàng hôn, chiều tối"},
-  {id:"v321",front:"多い",reading:"おおい",back:"nhiều"},
-  {id:"v322",front:"名刺",reading:"めいし",back:"danh thiếp"},
-  {id:"v323",front:"有名な",reading:"ゆうめいな",back:"nổi tiếng"},
-  {id:"v324",front:"外",reading:"そと",back:"bên ngoài (NGOẠI)",hanViet:"NGOẠI — ngoài, bên ngoài"},
-  {id:"v325",front:"外国",reading:"がいこく",back:"nước ngoài"},
-  // ── Page 9: Spring / Summer / Family ──────────
-  {id:"v326",front:"春",reading:"はる",back:"mùa xuân (XUÂN)",hanViet:"XUÂN — mùa xuân"},
-  {id:"v327",front:"青春",reading:"せいしゅん",back:"thanh xuân"},
-  {id:"v328",front:"若者",reading:"わかもの",back:"giới trẻ"},
-  {id:"v329",front:"医者",reading:"いしゃ",back:"bác sĩ"},
-  {id:"v330",front:"起きます",reading:"おきます",back:"dậy"},
-  {id:"v331",front:"起こります",reading:"おこります",back:"xảy ra"},
-  {id:"v332",front:"赤い",reading:"あかい",back:"đỏ"},
-  {id:"v333",front:"赤ちゃん",reading:"あかちゃん",back:"em bé"},
-  {id:"v334",front:"後で",reading:"あとで",back:"lát nữa, chốc nữa"},
-  {id:"v335",front:"後ろ",reading:"うしろ",back:"đằng sau, phía sau"},
-  {id:"v336",front:"行きます",reading:"いきます",back:"đi"},
-  {id:"v337",front:"元のところ",reading:"もとのところ",back:"chỗ cũ"},
-  {id:"v338",front:"兄",reading:"あに",back:"anh trai (HUYNH)",hanViet:"HUYNH — anh trai"},
-  {id:"v339",front:"お兄さん",reading:"おにいさん",back:"anh trai (khi gọi anh trai người khác)"},
-  {id:"v340",front:"今",reading:"いま",back:"hiện tại, bây giờ (KIM)",hanViet:"KIM — hiện tại, nay"},
-  {id:"v341",front:"今晩",reading:"こんばん",back:"tối nay"},
-  {id:"v342",front:"今週",reading:"こんしゅう",back:"tuần này"},
-  {id:"v343",front:"試合",reading:"しあい",back:"trận thi đấu"},
-  {id:"v344",front:"夫",reading:"おっと",back:"chồng (PHU)",hanViet:"PHU — chồng, đàn ông"},
-  {id:"v345",front:"大丈夫な",reading:"だいじょうぶな",back:"không sao, ổn"},
-  {id:"v346",front:"丈夫な",reading:"じょうぶな",back:"chắc chắn, bền"},
-  {id:"v347",front:"医学",reading:"いがく",back:"y học"},
-  {id:"v348",front:"会います",reading:"あいます",back:"gặp gỡ, gặp"},
-  {id:"v349",front:"会社員",reading:"かいしゃいん",back:"nhân viên công ty"},
-  {id:"v350",front:"運動会",reading:"うんどうかい",back:"đại hội thể thao"},
-  {id:"v351",front:"絵",reading:"え",back:"bức tranh (HỘI)",hanViet:"HỘI — tranh, hội họa"},
-  {id:"v352",front:"夏",reading:"なつ",back:"mùa hè (HẠ)",hanViet:"HẠ — mùa hè"},
-  {id:"v353",front:"道",reading:"みち",back:"con đường (ĐẠO)",hanViet:"ĐẠO — đường, con đường"},
-  {id:"v354",front:"先生",reading:"せんせい",back:"thầy/cô giáo"},
-  {id:"v355",front:"先週",reading:"せんしゅう",back:"tuần trước"},
-  {id:"v356",front:"先月",reading:"せんげつ",back:"tháng trước"},
-  {id:"v357",front:"光",reading:"ひかり",back:"ánh sáng (QUANG)",hanViet:"QUANG — ánh sáng"},
-  {id:"v358",front:"取ります",reading:"とります",back:"lấy"},
-  {id:"v359",front:"冬",reading:"ふゆ",back:"mùa đông (ĐÔNG)",hanViet:"ĐÔNG — mùa đông"},
-  // ── Page 10: Night / High / North ─────────────
-  {id:"v360",front:"夜",reading:"よる",back:"buổi tối, đêm (DẠ)",hanViet:"DẠ — đêm, ban đêm"},
-  {id:"v361",front:"今夜",reading:"こんや",back:"tối nay"},
-  {id:"v362",front:"高い",reading:"たかい",back:"cao; đắt"},
-  {id:"v363",front:"高校生",reading:"こうこうせい",back:"học sinh cấp ba"},
-  {id:"v364",front:"忙しい",reading:"いそがしい",back:"bận rộn"},
-  {id:"v365",front:"所",reading:"ところ",back:"chỗ, nơi (SỞ)",hanViet:"SỞ — chỗ, nơi chốn"},
-  {id:"v366",front:"近所",reading:"きんじょ",back:"hàng xóm"},
-  {id:"v367",front:"北",reading:"きた",back:"phía Bắc (BẮC)",hanViet:"BẮC — phía bắc"},
-  {id:"v368",front:"北部",reading:"ほくぶ",back:"miền Bắc"},
-  {id:"v369",front:"白い",reading:"しろい",back:"trắng"},
-  {id:"v370",front:"黒い",reading:"くろい",back:"đen"},
-  {id:"v371",front:"住む",reading:"すむ",back:"ở, cư trú"},
-  {id:"v372",front:"住所",reading:"じゅうしょ",back:"địa chỉ"},
-  {id:"v373",front:"国",reading:"くに",back:"đất nước (QUỐC)",hanViet:"QUỐC — nước, quốc gia"},
-  {id:"v374",front:"書きます",reading:"かきます",back:"viết"},
-  {id:"v375",front:"辞書",reading:"じしょ",back:"từ điển"},
-  {id:"v376",front:"図書館",reading:"としょかん",back:"thư viện"},
-  {id:"v377",front:"説明書",reading:"せつめいしょ",back:"sách hướng dẫn"},
-  {id:"v378",front:"川",reading:"かわ",back:"con sông (XUYÊN)",hanViet:"XUYÊN — sông, xuyên qua"},
-  {id:"v379",front:"南",reading:"みなみ",back:"phía Nam (NAM)",hanViet:"NAM — phía nam"},
-  {id:"v380",front:"弟",reading:"おとうと",back:"em trai (ĐỆ)",hanViet:"ĐỆ — em trai"},
-  {id:"v381",front:"兄弟",reading:"きょうだい",back:"anh em"},
-  {id:"v382",front:"空",reading:"そら",back:"bầu trời (KHÔNG)",hanViet:"KHÔNG — trống, bầu trời"},
-  {id:"v383",front:"空気",reading:"くうき",back:"không khí"},
-  {id:"v384",front:"声",reading:"こえ",back:"tiếng, giọng nói (THANH)",hanViet:"THANH — tiếng, âm thanh"},
-  {id:"v385",front:"音声",reading:"おんせい",back:"âm thanh"},
-  {id:"v386",front:"店",reading:"みせ",back:"cửa hàng (ĐIẾM)",hanViet:"ĐIẾM — cửa hàng, quán"},
-  {id:"v387",front:"店員",reading:"てんいん",back:"nhân viên cửa hàng"},
+  // ‚îÄ‚îÄ Page 1: Numbers ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v001",front:"‰∏Ä",reading:"„ÅÑ„Å°",back:"s·ªë m·ªôt (NH·∫§T)",hanViet:"NH·∫§T ‚Äî s·ªë m·ªôt, ƒë∆°n v·ªã ƒë·∫ßu ti√™n"},
+  {id:"v002",front:"‰∏Ä‰∫∫„Åß",reading:"„Å≤„Å®„Çä„Åß",back:"m·ªôt m√¨nh / m·ªôt ng∆∞·ªùi"},
+  {id:"v003",front:"‰∏Ä„Å§",reading:"„Å≤„Å®„Å§",back:"m·ªôt c√°i"},
+  {id:"v004",front:"‰∏ÄÊó•",reading:"„ÅÑ„Å°„Å´„Å° / „Å§„ÅÑ„Åü„Å°",back:"1 ng√†y / m√πng 1"},
+  {id:"v005",front:"‰∫å",reading:"„Å´",back:"s·ªë hai (NHI)",hanViet:"NHI ‚Äî s·ªë hai"},
+  {id:"v006",front:"‰∫å‰∫∫",reading:"„Åµ„Åü„Çä",back:"hai ng∆∞·ªùi"},
+  {id:"v007",front:"‰∫å„Å§",reading:"„Åµ„Åü„Å§",back:"hai c√°i"},
+  {id:"v008",front:"‰∫åÊó•",reading:"„Åµ„Å§„Åã",back:"2 ng√†y / m√πng 2"},
+  {id:"v009",front:"‰∏â",reading:"„Åï„Çì",back:"s·ªë ba (TAM)",hanViet:"TAM ‚Äî s·ªë ba"},
+  {id:"v010",front:"‰∏âÊó•",reading:"„Åø„Å£„Åã",back:"3 ng√†y / m√πng 3"},
+  {id:"v011",front:"‰∏â„Å§",reading:"„Åø„Å£„Å§",back:"ba c√°i"},
+  {id:"v012",front:"‰∏âÊúà",reading:"„Åï„Çì„Åå„Å§",back:"th√°ng Ba"},
+  {id:"v013",front:"Âõõ",reading:"„Åó / „Çà„Çì",back:"s·ªë b·ªën (T·ª®)",hanViet:"T·ª® ‚Äî s·ªë b·ªën"},
+  {id:"v014",front:"ÂõõÊó•",reading:"„Çà„Å£„Åã",back:"4 ng√†y / m√πng 4"},
+  {id:"v015",front:"Âõõ„Å§",reading:"„Çà„Å£„Å§",back:"b·ªën c√°i"},
+  {id:"v016",front:"ÂõõÊúà",reading:"„Åó„Åå„Å§",back:"th√°ng T∆∞"},
+  {id:"v017",front:"‰∫î",reading:"„Åî",back:"s·ªë nƒÉm (NG≈®)",hanViet:"NG≈® ‚Äî s·ªë nƒÉm"},
+  {id:"v018",front:"‰∫îÊó•",reading:"„ÅÑ„Å§„Åã",back:"5 ng√†y / m√πng 5"},
+  {id:"v019",front:"‰∫î„Å§",reading:"„ÅÑ„Å§„Å§",back:"nƒÉm c√°i"},
+  {id:"v020",front:"‰∫îÊúà",reading:"„Åî„Åå„Å§",back:"th√°ng NƒÉm"},
+  {id:"v021",front:"ÂÖ≠",reading:"„Çç„Åè",back:"s·ªë s√°u (L·ª§C)",hanViet:"L·ª§C ‚Äî s·ªë s√°u"},
+  {id:"v022",front:"ÂÖ≠Êó•",reading:"„ÇÄ„ÅÑ„Åã",back:"6 ng√†y / m√πng 6"},
+  {id:"v023",front:"ÂÖ≠„Å§",reading:"„ÇÄ„Å£„Å§",back:"s√°u c√°i"},
+  {id:"v024",front:"ÂÖ≠Êúà",reading:"„Çç„Åè„Åå„Å§",back:"th√°ng S√°u"},
+  {id:"v025",front:"‰∏É",reading:"„Åó„Å° / „Å™„Å™",back:"s·ªë b·∫£y (TH·∫§T)",hanViet:"TH·∫§T ‚Äî s·ªë b·∫£y"},
+  {id:"v026",front:"‰∏ÉÊó•",reading:"„Å™„ÅÆ„Åã",back:"7 ng√†y / m√πng 7"},
+  {id:"v027",front:"‰∏É„Å§",reading:"„Å™„Å™„Å§",back:"b·∫£y c√°i"},
+  {id:"v028",front:"‰∏ÉÊúà",reading:"„Åó„Å°„Åå„Å§",back:"th√°ng B·∫£y"},
+  {id:"v029",front:"ÂÖ´",reading:"„ÅØ„Å°",back:"s·ªë t√°m (B√ÅT)",hanViet:"B√ÅT ‚Äî s·ªë t√°m"},
+  {id:"v030",front:"ÂÖ´Êó•",reading:"„Çà„ÅÜ„Åã",back:"8 ng√†y / m√πng 8"},
+  {id:"v031",front:"ÂÖ´„Å§",reading:"„ÇÑ„Å£„Å§",back:"t√°m c√°i"},
+  {id:"v032",front:"ÂÖ´Êúà",reading:"„ÅØ„Å°„Åå„Å§",back:"th√°ng T√°m"},
+  {id:"v033",front:"‰πù",reading:"„Åè / „Åç„ÇÖ„ÅÜ",back:"s·ªë ch√≠n (C·ª¨U)",hanViet:"C·ª¨U ‚Äî s·ªë ch√≠n"},
+  {id:"v034",front:"‰πùÊó•",reading:"„Åì„Åì„ÅÆ„Åã",back:"9 ng√†y / m√πng 9"},
+  {id:"v035",front:"‰πùÊúà",reading:"„Åè„Åå„Å§",back:"th√°ng Ch√≠n"},
+  {id:"v036",front:"ÂçÅ",reading:"„Åò„ÇÖ„ÅÜ / „Å®„Åä",back:"s·ªë m∆∞·ªùi (TH·∫¨P)",hanViet:"TH·∫¨P ‚Äî s·ªë m∆∞·ªùi"},
+  {id:"v037",front:"ÂçÅÊó•",reading:"„Å®„Åä„Åã",back:"10 ng√†y / m√πng 10"},
+  {id:"v038",front:"ÂçÅÂàÜ„Å™",reading:"„Åò„ÇÖ„ÅÜ„Å∂„Çì„Å™",back:"ƒë·∫ßy ƒë·ªß, tr·ªçn v·∫πn"},
+  {id:"v039",front:"Áôæ",reading:"„Å≤„ÇÉ„Åè",back:"m·ªôt trƒÉm (B√ÅCH)",hanViet:"B√ÅCH ‚Äî m·ªôt trƒÉm"},
+  {id:"v040",front:"‰∏âÁôæ",reading:"„Åï„Çì„Å≥„ÇÉ„Åè",back:"ba trƒÉm (300)"},
+  {id:"v041",front:"ÂÖ≠Áôæ",reading:"„Çç„Å£„Å¥„ÇÉ„Åè",back:"s√°u trƒÉm (600)"},
+  {id:"v042",front:"ÂçÉ",reading:"„Åõ„Çì",back:"m·ªôt ngh√¨n (THI√äN)",hanViet:"THI√äN ‚Äî m·ªôt ngh√¨n"},
+  {id:"v043",front:"‰∏âÂçÉ",reading:"„Åï„Çì„Åú„Çì",back:"ba ngh√¨n (3.000)"},
+  {id:"v044",front:"ÂÖ´ÂçÉ",reading:"„ÅØ„Å£„Åõ„Çì",back:"t√°m ngh√¨n (8.000)"},
+  {id:"v045",front:"‰∏á",reading:"„Åæ„Çì",back:"m∆∞·ªùi ngh√¨n (V·∫†N)",hanViet:"V·∫†N ‚Äî m∆∞·ªùi ngh√¨n"},
+  {id:"v046",front:"‰∏Ä‰∏á",reading:"„ÅÑ„Å°„Åæ„Çì",back:"1 v·∫°n (10.000)"},
+  {id:"v047",front:"‰∏áÂºï„Åç",reading:"„Åæ„Çì„Å≥„Åç",back:"ƒÉn c·∫Øp v·∫∑t"},
+  {id:"v048",front:"ÂÜÜ",reading:"„Åà„Çì",back:"y√™n Nh·∫≠t (VI√äN)",hanViet:"VI√äN ‚Äî ƒë·ªìng ti·ªÅn h√¨nh tr√≤n"},
+  {id:"v049",front:"‰∫îÂÜÜ",reading:"„Åî„Åà„Çì",back:"5 y√™n"},
+  // ‚îÄ‚îÄ Page 2: Moon / Morning / Water / Tree / Metal ‚îÄ‚îÄ
+  {id:"v050",front:"Êúà",reading:"„Å§„Åç",back:"m·∫∑t trƒÉng (NGUY·ªÜT)",hanViet:"NGUY·ªÜT ‚Äî m·∫∑t trƒÉng, th√°ng"},
+  {id:"v051",front:"Êúà„Çà„ÅÜÊó•",reading:"„Åí„Å§„Çà„ÅÜ„Å≥",back:"th·ª© Hai"},
+  {id:"v052",front:"‰ªäÊúà",reading:"„Åì„Çì„Åí„Å§",back:"th√°ng n√†y"},
+  {id:"v053",front:"Êòé„Çã„ÅÑ",reading:"„ÅÇ„Åã„Çã„ÅÑ",back:"t∆∞∆°i s√°ng, s√°ng s·ªßa, vui v·∫ª"},
+  {id:"v054",front:"Ë™¨Êòé„Åó„Åæ„Åô",reading:"„Åõ„Å§„ÇÅ„ÅÑ„Åó„Åæ„Åô",back:"gi·∫£i th√≠ch, ch·ªâ d·∫´n"},
+  {id:"v055",front:"Áô∫Êòé„Åó„Åæ„Åô",reading:"„ÅØ„Å§„ÇÅ„ÅÑ„Åó„Åæ„Åô",back:"ph√°t minh"},
+  {id:"v056",front:"Êúù",reading:"„ÅÇ„Åï",back:"bu·ªïi s√°ng (TRI·ªÄU)",hanViet:"TRI·ªÄU ‚Äî bu·ªïi s√°ng, tri·ªÅu ƒë·∫°i"},
+  {id:"v057",front:"ÊØéÊúù",reading:"„Åæ„ÅÑ„ÅÇ„Åï",back:"m·ªói s√°ng, h·∫±ng s√°ng"},
+  {id:"v058",front:"Êúù„Åî„ÅØ„Çì",reading:"„ÅÇ„Åï„Åî„ÅØ„Çì",back:"b·ªØa s√°ng"},
+  {id:"v059",front:"Ê∞¥",reading:"„Åø„Åö",back:"n∆∞·ªõc (TH·ª¶Y)",hanViet:"TH·ª¶Y ‚Äî n∆∞·ªõc"},
+  {id:"v060",front:"Ê∞¥„Çà„ÅÜÊó•",reading:"„Åô„ÅÑ„Çà„ÅÜ„Å≥",back:"th·ª© T∆∞"},
+  {id:"v061",front:"Ê∞¥Ê≥≥",reading:"„Åô„ÅÑ„Åà„ÅÑ",back:"b∆°i l·ªôi"},
+  {id:"v062",front:"Ê∞∑",reading:"„Åì„Åä„Çä",back:"bƒÉng, ƒë√° (BƒÇNG)",hanViet:"BƒÇNG ‚Äî bƒÉng ƒë√°"},
+  {id:"v063",front:"„Åã„ÅçÊ∞∑",reading:"„Åã„Åç„Åî„Åä„Çä",back:"m√≥n ƒë√° b√†o"},
+  {id:"v064",front:"Ê≥≥„Åé„Åæ„Åô",reading:"„Åä„Çà„Åé„Åæ„Åô",back:"b∆°i"},
+  {id:"v065",front:"Êú¨",reading:"„Åª„Çì",back:"s√°ch (B·∫¢N)",hanViet:"B·∫¢N ‚Äî g·ªëc r·ªÖ, s√°ch"},
+  {id:"v066",front:"Êó•Êú¨",reading:"„Å´„Åª„Çì",back:"Nh·∫≠t B·∫£n"},
+  {id:"v067",front:"Êú¨Áâ©",reading:"„Åª„Çì„ÇÇ„ÅÆ",back:"h√†ng th·∫≠t"},
+  {id:"v068",front:"‰Ωì",reading:"„Åã„Çâ„Å†",back:"c∆° th·ªÉ (TH·ªÇ)",hanViet:"TH·ªÇ ‚Äî th√¢n th·ªÉ"},
+  {id:"v069",front:"‰ΩìËÇ≤È§®",reading:"„Åü„ÅÑ„ÅÑ„Åè„Åã„Çì",back:"ph√≤ng th·ªÉ ch·∫•t"},
+  {id:"v070",front:"‰ΩìÈáç",reading:"„Åü„ÅÑ„Åò„ÇÖ„ÅÜ",back:"c√¢n n·∫∑ng"},
+  {id:"v071",front:"‰ºë„Åø",reading:"„ÇÑ„Åô„Åø",back:"ngh·ªâ, ng√†y ngh·ªâ"},
+  {id:"v072",front:"Â§è‰ºë„Åø",reading:"„Å™„Å§„ÇÑ„Åô„Åø",back:"ngh·ªâ h√®"},
+  {id:"v073",front:"ÈÄ£‰ºë",reading:"„Çå„Çì„Åç„ÇÖ„ÅÜ",back:"k√¨ ngh·ªâ, ƒë·ª£t ngh·ªâ d√†i"},
+  {id:"v074",front:"ÁÅ´",reading:"„Å≤",back:"l·ª≠a (H·ªéA)",hanViet:"H·ªéA ‚Äî l·ª≠a"},
+  {id:"v075",front:"Ëä±ÁÅ´",reading:"„ÅØ„Å™„Å≥",back:"ph√°o hoa"},
+  {id:"v076",front:"ÁÅ´„Çà„ÅÜÊó•",reading:"„Åã„Çà„ÅÜ„Å≥",back:"th·ª© Ba"},
+  {id:"v077",front:"Áïë",reading:"„ÅØ„Åü„Åë",back:"c√°nh ƒë·ªìng"},
+  {id:"v078",front:"Áßã",reading:"„ÅÇ„Åç",back:"m√πa thu (THU)",hanViet:"THU ‚Äî m√πa thu"},
+  {id:"v079",front:"Êú®",reading:"„Åç",back:"c√¢y, c√¢y c·ªëi (M·ªòC)",hanViet:"M·ªòC ‚Äî c√¢y, g·ªó"},
+  {id:"v080",front:"Êú®„Çà„ÅÜÊó•",reading:"„ÇÇ„Åè„Çà„ÅÜ„Å≥",back:"th·ª© NƒÉm"},
+  {id:"v081",front:"Êûó",reading:"„ÅØ„ÇÑ„Åó",back:"r·ª´ng (L√ÇM)",hanViet:"L√ÇM ‚Äî r·ª´ng"},
+  {id:"v082",front:"Ê£ÆÊûó",reading:"„Åó„Çì„Çä„Çì",back:"v√πng r·ª´ng r·∫≠m"},
+  {id:"v083",front:"Ê£Æ",reading:"„ÇÇ„Çä",back:"r·ª´ng r·∫≠m (S√ÇM)",hanViet:"S√ÇM ‚Äî r·ª´ng r·∫≠m"},
+  {id:"v084",front:"„ÅäÈáë",reading:"„Åä„Åã„Å≠",back:"ti·ªÅn"},
+  {id:"v085",front:"Èáë„Çà„ÅÜÊó•",reading:"„Åç„Çì„Çà„ÅÜ„Å≥",back:"th·ª© S√°u"},
+  {id:"v086",front:"Ë≤ØÈáë",reading:"„Å°„Çá„Åç„Çì",back:"ti·ªÅn ti·∫øt ki·ªám"},
+  {id:"v087",front:"ÈäÄË°åÂì°",reading:"„Åé„Çì„Åì„ÅÜ„ÅÑ„Çì",back:"nh√¢n vi√™n ng√¢n h√†ng"},
+  {id:"v088",front:"ÈäÄË°å",reading:"„Åé„Çì„Åì„ÅÜ",back:"ng√¢n h√†ng"},
+  {id:"v089",front:"Âú∞‰∏ãÈâÑ",reading:"„Å°„Åã„Å¶„Å§",back:"t√†u ƒëi·ªán ng·∫ßm"},
+  // ‚îÄ‚îÄ Page 3: Characters / Women / Study ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v090",front:"Â≠ê„Å©„ÇÇ",reading:"„Åì„Å©„ÇÇ",back:"tr·∫ª con"},
+  {id:"v091",front:"ÊÅØÂ≠ê",reading:"„ÇÄ„Åô„Åì",back:"con trai"},
+  {id:"v092",front:"„ÅäËèìÂ≠ê",reading:"„Åä„Åã„Åó",back:"k·∫πo b√°nh"},
+  {id:"v093",front:"Êº¢Â≠ó",reading:"„Åã„Çì„Åò",back:"ch·ªØ H√°n"},
+  {id:"v094",front:"Â≠ó",reading:"„Åò",back:"ch·ªØ, k√Ω t·ª± (T·ª∞)",hanViet:"T·ª∞ ‚Äî ch·ªØ, k√Ω t·ª±"},
+  {id:"v095",front:"Â≠¶Áîü",reading:"„Åå„Åè„Åõ„ÅÑ",back:"h·ªçc sinh"},
+  {id:"v096",front:"Â§ßÂ≠¶",reading:"„Å†„ÅÑ„Åå„Åè",back:"tr∆∞·ªùng ƒë·∫°i h·ªçc"},
+  {id:"v097",front:"Â≠¶Ê†°",reading:"„Åå„Å£„Åì„ÅÜ",back:"tr∆∞·ªùng h·ªçc"},
+  {id:"v098",front:"Â•≥„ÅÆ‰∫∫",reading:"„Åä„Çì„Å™„ÅÆ„Å≤„Å®",back:"c√¥ g√°i, ph·ª• n·ªØ"},
+  {id:"v099",front:"ÂΩºÂ•≥",reading:"„Åã„ÅÆ„Åò„Çá",back:"c√¥ ·∫•y / b·∫°n g√°i"},
+  {id:"v100",front:"Â•≥ÊÄß",reading:"„Åò„Çá„Åõ„ÅÑ",back:"n·ªØ gi·ªõi, ph·ª• n·ªØ"},
+  {id:"v101",front:"Â•Ω„Åç„Å™",reading:"„Åô„Åç„Å™",back:"th√≠ch"},
+  {id:"v102",front:"Â§ßÂ•Ω„Åç„Å™",reading:"„Å†„ÅÑ„Åô„Åç„Å™",back:"r·∫•t th√≠ch, y√™u"},
+  {id:"v103",front:"ÂÆâ„ÅÑ",reading:"„ÇÑ„Åô„ÅÑ",back:"r·∫ª"},
+  {id:"v104",front:"ÂÆâÂøÉ„Åó„Åæ„Åô",reading:"„ÅÇ„Çì„Åó„Çì„Åó„Åæ„Åô",back:"an t√¢m"},
+  {id:"v105",front:"ÂÆâÂÖ®",reading:"„ÅÇ„Çì„Åú„Çì",back:"an to√†n"},
+  {id:"v106",front:"Âçä",reading:"„ÅØ„Çì",back:"m·ªôt n·ª≠a, r∆∞·ª°i (B√ÅN)",hanViet:"B√ÅN ‚Äî m·ªôt n·ª≠a, ph√¢n n·ª≠a"},
+  {id:"v107",front:"ÂçäÂàÜ",reading:"„ÅØ„Çì„Å∂„Çì",back:"m·ªôt n·ª≠a, n·ª≠a ph·∫ßn"},
+  {id:"v108",front:"ÂçäÂπ¥",reading:"„ÅØ„Çì„Å®„Åó",back:"n·ª≠a nƒÉm"},
+  {id:"v109",front:"Á±≥",reading:"„Åì„ÇÅ",back:"g·∫°o (M·ªÑ)",hanViet:"M·ªÑ ‚Äî g·∫°o, l√∫a"},
+  {id:"v110",front:"Êù•„Åæ„Åô",reading:"„Åç„Åæ„Åô",back:"ƒë·∫øn, t·ªõi"},
+  {id:"v111",front:"Êú™Êù•",reading:"„Åø„Çâ„ÅÑ",back:"t∆∞∆°ng lai"},
+  {id:"v112",front:"Êù•ÈÄ±",reading:"„Çâ„ÅÑ„Åó„ÇÖ„ÅÜ",back:"tu·∫ßn sau"},
+  {id:"v113",front:"„ÅäÂØ∫",reading:"„Åä„Å¶„Çâ",back:"ƒë·ªÅn ch√πa"},
+  {id:"v114",front:"ÊôÇË®à",reading:"„Å®„Åë„ÅÑ",back:"ƒë·ªìng h·ªì"},
+  {id:"v115",front:"‰ΩïÊôÇ",reading:"„Å™„Çì„Åò",back:"m·∫•y gi·ªù"},
+  {id:"v116",front:"ÂæÖ„Å°„Åæ„Åô",reading:"„Åæ„Å°„Åæ„Åô",back:"ch·ªù, ƒë·ª£i"},
+  {id:"v117",front:"ÊãõÂæÖ„Åó„Åæ„Åô",reading:"„Åó„Çá„ÅÜ„Åü„ÅÑ„Åó„Åæ„Åô",back:"ƒë·ªëi ƒë√£i, ti·∫øp ƒë√£i"},
+  {id:"v118",front:"ÁõÆ",reading:"„ÇÅ",back:"m·∫Øt, con m·∫Øt (M·ª§C)",hanViet:"M·ª§C ‚Äî m·∫Øt, m·ª•c ti√™u"},
+  {id:"v119",front:"ÁõÆÁöÑ",reading:"„ÇÇ„Åè„Å¶„Åç",back:"m·ª•c ƒë√≠ch"},
+  {id:"v120",front:"Ëá™Ëª¢Ëªä",reading:"„Åò„Å¶„Çì„Åó„ÇÉ",back:"xe ƒë·∫°p"},
+  {id:"v121",front:"Ëá™ÂàÜ„Åß",reading:"„Åò„Å∂„Çì„Åß",back:"t·ª± m√¨nh"},
+  {id:"v122",front:"Ëá™Â∑±Á¥π‰ªã",reading:"„Åò„Åì„Åó„Çá„ÅÜ„Åã„ÅÑ",back:"gi·ªõi thi·ªáu b·∫£n th√¢n"},
+  {id:"v123",front:"Ë¶ã„Åæ„Åô",reading:"„Åø„Åæ„Åô",back:"nh√¨n, ng·∫Øm"},
+  {id:"v124",front:"Ë¶ã„Åà„Åæ„Åô",reading:"„Åø„Åà„Åæ„Åô",back:"nh√¨n th·∫•y"},
+  {id:"v125",front:"„ÅäËä±Ë¶ã",reading:"„Åä„ÅØ„Å™„Åø",back:"ng·∫Øm hoa anh ƒë√†o"},
+  {id:"v126",front:"Ë≤ù",reading:"„Åã„ÅÑ",back:"con s√≤ (B·ªêI)",hanViet:"B·ªêI ‚Äî v·ªè s√≤, ti·ªÅn c·ªï"},
+  {id:"v127",front:"Ë≤∑„ÅÑ„Åæ„Åô",reading:"„Åã„ÅÑ„Åæ„Åô",back:"mua"},
+  {id:"v128",front:"Ë≤∑„ÅÑÁâ©„Åó„Åæ„Åô",reading:"„Åã„ÅÑ„ÇÇ„ÅÆ„Åó„Åæ„Åô",back:"mua s·∫Øm, shopping"},
+  {id:"v129",front:"ÈÅìÂÖ∑",reading:"„Å©„ÅÜ„Åê",back:"d·ª•ng c·ª•"},
+  {id:"v130",front:"ÂÖ∑Âêà",reading:"„Åê„ÅÇ„ÅÑ",back:"t√¨nh tr·∫°ng, tr·∫°ng th√°i"},
+  // ‚îÄ‚îÄ Page 4: Directions / Body / Sound ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v131",front:"Âè≥",reading:"„Åø„Åé",back:"b√™n ph·∫£i (H·ªÆU)",hanViet:"H·ªÆU ‚Äî ph·∫£i, b√™n ph·∫£i"},
+  {id:"v132",front:"Â∑¶",reading:"„Å≤„Å†„Çä",back:"b√™n tr√°i (T·∫¢)",hanViet:"T·∫¢ ‚Äî tr√°i, b√™n tr√°i"},
+  {id:"v133",front:"ÂèãÈÅî",reading:"„Å®„ÇÇ„Å†„Å°",back:"b·∫°n b√®"},
+  {id:"v134",front:"Á´ã„Å°„Åæ„Åô",reading:"„Åü„Å°„Åæ„Åô",back:"ƒë·ª©ng"},
+  {id:"v135",front:"Á´ãÂÖ•Á¶ÅÊ≠¢",reading:"„Åü„Å°„ÅÑ„Çä„Åç„Çì„Åó",back:"c·∫•m v√†o"},
+  {id:"v136",front:"Èü≥",reading:"„Åä„Å®",back:"√¢m thanh (√ÇM)",hanViet:"√ÇM ‚Äî √¢m thanh, ti·∫øng"},
+  {id:"v137",front:"Èü≥Ê•Ω",reading:"„Åä„Çì„Åå„Åè",back:"√¢m nh·∫°c"},
+  {id:"v138",front:"Áô∫Èü≥",reading:"„ÅØ„Å§„Åä„Çì",back:"ph√°t √¢m"},
+  {id:"v139",front:"Êöó„ÅÑ",reading:"„Åè„Çâ„ÅÑ",back:"t·ªëi, u √°m"},
+  {id:"v140",front:"Âúü„Çà„ÅÜÊó•",reading:"„Å©„Çà„ÅÜ„Å≥",back:"th·ª© B·∫£y"},
+  {id:"v141",front:"„ÅäÂúüÁî£",reading:"„Åä„Åø„ÇÑ„Åí",back:"qu√† qu√™, ƒë·ªì l∆∞u ni·ªám"},
+  {id:"v142",front:"‰∏ä",reading:"„ÅÜ„Åà",back:"tr√™n, b√™n tr√™n (TH∆Ø·ª¢NG)",hanViet:"TH∆Ø·ª¢NG ‚Äî tr√™n, b·ªÅ tr√™n"},
+  {id:"v143",front:"‰∏äÁùÄ",reading:"„ÅÜ„Çè„Åé",back:"√°o kho√°c"},
+  {id:"v144",front:"Â±ã‰∏ä",reading:"„Åä„Åè„Åò„Çá„ÅÜ",back:"s√¢n th∆∞·ª£ng"},
+  {id:"v145",front:"‰∏äÊâã„Å™",reading:"„Åò„Çá„ÅÜ„Åö„Å™",back:"gi·ªèi, th√†nh th·∫°o"},
+  {id:"v146",front:"‰∏ã",reading:"„Åó„Åü",back:"d∆∞·ªõi, b√™n d∆∞·ªõi (H·∫†)",hanViet:"H·∫† ‚Äî d∆∞·ªõi, ph√≠a d∆∞·ªõi"},
+  {id:"v147",front:"‰∏ãÁùÄ",reading:"„Åó„Åü„Åé",back:"qu·∫ßn √°o l√≥t"},
+  {id:"v148",front:"‰∏ãÊâã„Å™",reading:"„Å∏„Åü„Å™",back:"y·∫øu, k√©m"},
+  {id:"v149",front:"‰∏ç‰æø„Å™",reading:"„Åµ„Åπ„Çì„Å™",back:"b·∫•t ti·ªán"},
+  {id:"v150",front:"Â§ß„Åç„ÅÑ",reading:"„Åä„Åä„Åç„ÅÑ",back:"to, l·ªõn"},
+  {id:"v151",front:"Â§ß‰∫∫",reading:"„Åä„Å®„Å™",back:"ng∆∞·ªùi tr∆∞·ªüng th√†nh"},
+  {id:"v152",front:"Â§ß‰∏àÂ§´",reading:"„Å†„ÅÑ„Åò„Çá„ÅÜ„Å∂",back:"kh√¥ng sao, ·ªïn"},
+  {id:"v153",front:"Â§ßÂ≠¶Áîü",reading:"„Å†„ÅÑ„Åå„Åè„Åõ„ÅÑ",back:"sinh vi√™n ƒë·∫°i h·ªçc"},
+  {id:"v154",front:"Áä¨",reading:"„ÅÑ„Å¨",back:"con ch√≥ (KHUY·ªÇN)",hanViet:"KHUY·ªÇN ‚Äî ch√≥"},
+  {id:"v155",front:"Â§™„ÅÑ",reading:"„Åµ„Å®„ÅÑ",back:"b√©o; d√†y; to"},
+  {id:"v156",front:"Â§™„Çä„Åæ„Åô",reading:"„Åµ„Å®„Çä„Åæ„Åô",back:"b√©o l√™n"},
+  {id:"v157",front:"Â§™ÈôΩ",reading:"„Åü„ÅÑ„Çà„ÅÜ",back:"m·∫∑t tr·ªùi"},
+  {id:"v158",front:"Ë®Ä„ÅÑ„Åæ„Åô",reading:"„ÅÑ„ÅÑ„Åæ„Åô",back:"n√≥i"},
+  {id:"v159",front:"Ë®ÄË™û",reading:"„Åí„Çì„Åî",back:"ng√¥n ng·ªØ"},
+  {id:"v160",front:"Ë©±„Åó„Åæ„Åô",reading:"„ÅØ„Å™„Åó„Åæ„Åô",back:"n√≥i chuy·ªán"},
+  {id:"v161",front:"Ë©±",reading:"„ÅØ„Å™„Åó",back:"c√¢u chuy·ªán"},
+  {id:"v162",front:"ÈõªË©±„Åó„Åæ„Åô",reading:"„Åß„Çì„Çè„Åó„Åæ„Åô",back:"g·ªçi ƒëi·ªán"},
+  {id:"v163",front:"Ëã±Ë™û",reading:"„Åà„ÅÑ„Åî",back:"ti·∫øng Anh"},
+  {id:"v164",front:"Êó•Êú¨Ë™û",reading:"„Å´„Åª„Çì„Åî",back:"ti·∫øng Nh·∫≠t"},
+  {id:"v165",front:"ËÄ≥",reading:"„Åø„Åø",back:"tai (NHƒ®)",hanViet:"NHƒ® ‚Äî tai"},
+  {id:"v166",front:"Â∞ÇÈñÄ",reading:"„Åõ„Çì„ÇÇ„Çì",back:"chuy√™n m√¥n"},
+  {id:"v167",front:"ÂÖ•ÈñÄ",reading:"„Å´„ÇÖ„ÅÜ„ÇÇ„Çì",back:"nh·∫≠p m√¥n"},
+  {id:"v168",front:"ËÅû„Åç„Åæ„Åô",reading:"„Åç„Åç„Åæ„Åô",back:"nghe"},
+  {id:"v169",front:"ËÅû„Åì„Åà„Åæ„Åô",reading:"„Åç„Åì„Åà„Åæ„Åô",back:"nghe th·∫•y"},
+  {id:"v170",front:"Êñ∞ËÅû",reading:"„Åó„Çì„Å∂„Çì",back:"b√°o, t·ªù b√°o"},
+  {id:"v171",front:"Èñì",reading:"„ÅÇ„ÅÑ„Å† / „Åæ",back:"gi·ªØa, ·ªü gi·ªØa (GIAN)",hanViet:"GIAN ‚Äî kho·∫£ng gi·ªØa"},
+  {id:"v172",front:"Èñì„Å´Âêà„ÅÑ„Åæ„Åô",reading:"„Åæ„Å´„ÅÇ„ÅÑ„Åæ„Åô",back:"k·ªãp (gi·ªù)"},
+  // ‚îÄ‚îÄ Page 5: Mountain / Travel / People ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v173",front:"Â±±",reading:"„ÇÑ„Åæ",back:"n√∫i (S∆†N)",hanViet:"S∆†N ‚Äî n√∫i"},
+  {id:"v174",front:"ÁÅ´Â±±",reading:"„Åã„Åñ„Çì",back:"n√∫i l·ª≠a"},
+  {id:"v175",front:"Âá∫„Åæ„Åô",reading:"„Åß„Åæ„Åô",back:"ƒëi ra, xu·∫•t ph√°t"},
+  {id:"v176",front:"Âá∫Âè£",reading:"„Åß„Åê„Å°",back:"c·ª≠a ra, l·ªëi ra"},
+  {id:"v177",front:"Ëº∏Âá∫„Åó„Åæ„Åô",reading:"„ÇÜ„Åó„ÇÖ„Å§„Åó„Åæ„Åô",back:"xu·∫•t kh·∫©u"},
+  {id:"v178",front:"Â≤©",reading:"„ÅÑ„Çè",back:"ƒë√°, t·∫£ng ƒë√° (NHAM)",hanViet:"NHAM ‚Äî ƒë√°, t·∫£ng ƒë√°"},
+  {id:"v179",front:"„ÅÇ„ÅÆÊñπ",reading:"„ÅÇ„ÅÆ„Åã„Åü",back:"v·ªã kia (c√°ch n√≥i l·ªãch s·ª±)"},
+  {id:"v180",front:"Â§ïÊñπ",reading:"„ÇÜ„ÅÜ„Åå„Åü",back:"chi·ªÅu t·ªëi, ho√†ng h√¥n"},
+  {id:"v181",front:"ÊñπÊ≥ï",reading:"„Åª„ÅÜ„Åª„ÅÜ",back:"ph∆∞∆°ng ph√°p"},
+  {id:"v182",front:"ÊóÖË°å",reading:"„Çä„Çá„Åì„ÅÜ",back:"du l·ªãch"},
+  {id:"v183",front:"ÊóÖÈ§®",reading:"„Çä„Çá„Åã„Çì",back:"nh√† tr·ªç ki·ªÉu Nh·∫≠t"},
+  {id:"v184",front:"ÂÆ∂Êóè",reading:"„Åã„Åû„Åè",back:"gia ƒë√¨nh"},
+  {id:"v185",front:"‰ΩïÊ≠≥",reading:"„Å™„Çì„Åï„ÅÑ",back:"m·∫•y tu·ªïi"},
+  {id:"v186",front:"‰Ωï",reading:"„Å™„Å´ / „Å™„Çì",back:"c√°i g√¨, bao nhi√™u"},
+  {id:"v187",front:"Ëç∑Áâ©",reading:"„Å´„ÇÇ„Å§",back:"h√†nh l√Ω, ƒë·ªì ƒë·∫°c"},
+  {id:"v188",front:"Ê≠å",reading:"„ÅÜ„Åü",back:"b√†i h√°t (CA)",hanViet:"CA ‚Äî b√†i h√°t, ca"},
+  {id:"v189",front:"Ê≠å„ÅÑ„Åæ„Åô",reading:"„ÅÜ„Åü„ÅÑ„Åæ„Åô",back:"h√°t, ca h√°t"},
+  {id:"v190",front:"Ê≠åÊâã",reading:"„Åã„Åó„ÇÖ",back:"ca sƒ©"},
+  {id:"v191",front:"Áà∂",reading:"„Å°„Å°",back:"b·ªë (PH·ª§)",hanViet:"PH·ª§ ‚Äî cha, b·ªë"},
+  {id:"v192",front:"Á•ñÁà∂",reading:"„Åù„Åµ",back:"√¥ng (n·ªôi/ngo·∫°i)"},
+  {id:"v193",front:"‰∫§ÈÄö",reading:"„Åì„ÅÜ„Å§„ÅÜ",back:"giao th√¥ng"},
+  {id:"v194",front:"‰∫§Â∑ÆÁÇπ",reading:"„Åì„ÅÜ„Åï„Å¶„Çì",back:"ng√£ t∆∞"},
+  {id:"v195",front:"‰∫§Áï™",reading:"„Åì„ÅÜ„Å∞„Çì",back:"ƒë·ªìn c·∫£nh s√°t"},
+  {id:"v196",front:"È´òÊ†°",reading:"„Åì„ÅÜ„Åì„ÅÜ",back:"tr∆∞·ªùng c·∫•p ba"},
+  {id:"v197",front:"Â∞èÂ≠¶Ê†°",reading:"„Åó„Çá„ÅÜ„Åå„Å£„Åì„ÅÜ",back:"tr∆∞·ªùng ti·ªÉu h·ªçc"},
+  {id:"v198",front:"Âè£",reading:"„Åè„Å°",back:"c√°i mi·ªáng (KH·∫®U)",hanViet:"KH·∫®U ‚Äî mi·ªáng, c·ª≠a"},
+  {id:"v199",front:"ÂÖ•„ÇäÂè£",reading:"„ÅÑ„Çä„Åê„Å°",back:"c·ª≠a v√†o, l·ªëi v√†o"},
+  {id:"v200",front:"‰∫∫Âè£",reading:"„Åò„Çì„Åì„ÅÜ",back:"d√¢n s·ªë"},
+  {id:"v201",front:"‰∏≠",reading:"„Å™„Åã",back:"b√™n trong (TRUNG)",hanViet:"TRUNG ‚Äî gi·ªØa, trong"},
+  {id:"v202",front:"‰∏≠ÂõΩ",reading:"„Å°„ÇÖ„ÅÜ„Åî„Åè",back:"Trung Qu·ªëc"},
+  {id:"v203",front:"‰∏ñÁïå‰∏≠",reading:"„Åõ„Åã„ÅÑ„Åò„ÇÖ„ÅÜ",back:"kh·∫Øp th·∫ø gi·ªõi"},
+  {id:"v204",front:"Âè§„ÅÑ",reading:"„Åµ„Çã„ÅÑ",back:"c≈©, c·ªï"},
+  {id:"v205",front:"Ë∂≥",reading:"„ÅÇ„Åó",back:"ch√¢n (T√öC)",hanViet:"T√öC ‚Äî ch√¢n, ƒë·ªß"},
+  {id:"v206",front:"Ë∂≥„Çä„Åæ„Åô",reading:"„Åü„Çä„Åæ„Åô",back:"ƒë·ªß, ƒë·ªß r·ªìi"},
+  {id:"v207",front:"ËâØ„ÅÑ",reading:"„Çà„ÅÑ",back:"t·ªët"},
+  {id:"v208",front:"È£ü„Åπ„Åæ„Åô",reading:"„Åü„Åπ„Åæ„Åô",back:"ƒÉn"},
+  {id:"v209",front:"È£ü„ÅπÁâ©",reading:"„Åü„Åπ„ÇÇ„ÅÆ",back:"ƒë·ªì ƒÉn, th·ª©c ƒÉn"},
+  {id:"v210",front:"È£üÂ†Ç",reading:"„Åó„Çá„Åè„Å©„ÅÜ",back:"nh√† ƒÉn, cƒÉng tin"},
+  {id:"v211",front:"È£≤„Åø„Åæ„Åô",reading:"„ÅÆ„Åø„Åæ„Åô",back:"u·ªëng"},
+  {id:"v212",front:"È£≤„ÅøÁâ©",reading:"„ÅÆ„Åø„ÇÇ„ÅÆ",back:"ƒë·ªì u·ªëng, th·ª©c u·ªëng"},
+  {id:"v213",front:"Êúù„ÅîÈ£Ø",reading:"„ÅÇ„Åï„Åî„ÅØ„Çì",back:"b·ªØa s√°ng"},
+  {id:"v214",front:"Êòº„ÅîÈ£Ø",reading:"„Å≤„Çã„Åî„ÅØ„Çì",back:"b·ªØa tr∆∞a"},
+  // ‚îÄ‚îÄ Page 6: Birds / Transportation ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v215",front:"È≥•",reading:"„Å®„Çä",back:"con chim (ƒêI·ªÇU)",hanViet:"ƒêI·ªÇU ‚Äî chim"},
+  {id:"v216",front:"ÁÑº„ÅçÈ≥•",reading:"„ÇÑ„Åç„Å®„Çä",back:"th·ªãt g√† xi√™n n∆∞·ªõng"},
+  {id:"v217",front:"È¶¨",reading:"„ÅÜ„Åæ",back:"con ng·ª±a (M√É)",hanViet:"M√É ‚Äî ng·ª±a"},
+  {id:"v218",front:"ÈßÖ",reading:"„Åà„Åç",back:"nh√† ga (D·ªäCH)",hanViet:"D·ªäCH ‚Äî tr·∫°m, nh√† ga"},
+  {id:"v219",front:"ÈßÖÂâç",reading:"„Åà„Åç„Åæ„Åà",back:"tr∆∞·ªõc nh√† ga"},
+  {id:"v220",front:"ÂØåÂ£´Â±±",reading:"„Åµ„Åò„Åï„Çì",back:"n√∫i Ph√∫ Sƒ©"},
+  {id:"v221",front:"Â£≤„ÇäÂ†¥",reading:"„ÅÜ„Çä„Å∞",back:"qu·∫ßy b√°n h√†ng"},
+  {id:"v222",front:"Â£≤„Çä„Åæ„Åô",reading:"„ÅÜ„Çä„Åæ„Åô",back:"b√°n, b√°n h√†ng"},
+  {id:"v223",front:"Â£≤„Çå„Åæ„Åô",reading:"„ÅÜ„Çå„Åæ„Åô",back:"b√°n ch·∫°y"},
+  {id:"v224",front:"Ë™≠„Åø„Åæ„Åô",reading:"„Çà„Åø„Åæ„Åô",back:"ƒë·ªçc"},
+  {id:"v225",front:"Ë™≠„ÅøÊñπ",reading:"„Çà„Åø„Åã„Åü",back:"c√°ch ƒë·ªçc"},
+  {id:"v226",front:"Áî∞Ëàé",reading:"„ÅÑ„Å™„Åã",back:"v√πng n√¥ng th√¥n"},
+  {id:"v227",front:"Áî∑„ÅÆ‰∫∫",reading:"„Åä„Å®„Åì„ÅÆ„Å≤„Å®",back:"ng∆∞·ªùi con trai"},
+  {id:"v228",front:"Áî∑„ÅÆÂ≠ê",reading:"„Åä„Å®„Åì„ÅÆ„Åì",back:"b√© trai"},
+  {id:"v229",front:"Áî∑ÊÄß",reading:"„Å†„Çì„Åõ„ÅÑ",back:"nam gi·ªõi"},
+  {id:"v230",front:"Áî∫",reading:"„Åæ„Å°",back:"th·ªã tr·∫•n, con ph·ªë"},
+  {id:"v231",front:"È≠ö",reading:"„Åï„Åã„Å™",back:"con c√° (NG∆Ø)",hanViet:"NG∆Ø ‚Äî c√°"},
+  {id:"v232",front:"‰∫∫",reading:"„Å≤„Å®",back:"con ng∆∞·ªùi (NH√ÇN)",hanViet:"NH√ÇN ‚Äî ng∆∞·ªùi"},
+  {id:"v233",front:"Êó•Êú¨‰∫∫",reading:"„Å´„Åª„Çì„Åò„Çì",back:"ng∆∞·ªùi Nh·∫≠t"},
+  {id:"v234",front:"‰∫∫ÂΩ¢",reading:"„Å´„Çì„Åé„Çá„ÅÜ",back:"b√∫p b√™"},
+  {id:"v235",front:"ÂÖ•„Çä„Åæ„Åô",reading:"„ÅØ„ÅÑ„Çä„Åæ„Åô",back:"v√†o, ƒëi v√†o"},
+  {id:"v236",front:"ÂÖ•Èô¢„Åó„Åæ„Åô",reading:"„Å´„ÇÖ„ÅÜ„ÅÑ„Çì„Åó„Åæ„Åô",back:"nh·∫≠p vi·ªán"},
+  {id:"v237",front:"Ê∞∏‰πÖ",reading:"„Åà„ÅÑ„Åç„ÇÖ„ÅÜ",back:"vƒ©nh c·ª≠u"},
+  {id:"v238",front:"‰∏ñÁïå",reading:"„Åõ„Åã„ÅÑ",back:"th·∫ø gi·ªõi"},
+  {id:"v239",front:"Êù±",reading:"„Å≤„Åå„Åó",back:"ph√≠a ƒê√¥ng (ƒê√îNG)",hanViet:"ƒê√îNG ‚Äî ph√≠a ƒë√¥ng"},
+  {id:"v240",front:"Êù±‰∫¨",reading:"„Å®„ÅÜ„Åç„Çá„ÅÜ",back:"th√†nh ph·ªë Tokyo"},
+  {id:"v241",front:"Êò†Áîª",reading:"„Åà„ÅÑ„Åå",back:"phim, phim ·∫£nh"},
+  {id:"v242",front:"Êò†ÁîªÈ§®",reading:"„Åà„ÅÑ„Åå„Åã„Çì",back:"r·∫°p chi·∫øu phim"},
+  {id:"v243",front:"Ëªä",reading:"„Åè„Çã„Åæ",back:"xe h∆°i, √¥ t√¥ (XA)",hanViet:"XA ‚Äî xe"},
+  {id:"v244",front:"ÈõªËªä",reading:"„Åß„Çì„Åó„ÇÉ",back:"t√†u ƒëi·ªán"},
+  {id:"v245",front:"Èáç„ÅÑ",reading:"„Åä„ÇÇ„ÅÑ",back:"n·∫∑ng"},
+  {id:"v246",front:"Èáç„Åï",reading:"„Åä„ÇÇ„Åï",back:"ƒë·ªô n·∫∑ng, tr·ªçng l∆∞·ª£ng"},
+  {id:"v247",front:"ÈÅã„Å≥„Åæ„Åô",reading:"„ÅØ„Åì„Å≥„Åæ„Åô",back:"v·∫≠n chuy·ªÉn, chuy√™n ch·ªü"},
+  {id:"v248",front:"ÈÅãËª¢„Åó„Åæ„Åô",reading:"„ÅÜ„Çì„Å¶„Çì„Åó„Åæ„Åô",back:"l√°i xe"},
+  {id:"v249",front:"ÈÅãÂãï",reading:"„ÅÜ„Çì„Å©„ÅÜ",back:"v·∫≠n ƒë·ªông, th·ªÉ d·ª•c"},
+  {id:"v250",front:"ÈÅãËª¢Êâã",reading:"„ÅÜ„Çì„Å¶„Çì„Åó„ÇÖ",back:"ng∆∞·ªùi l√°i xe"},
+  {id:"v251",front:"ËªΩ„ÅÑ",reading:"„Åã„Çã„ÅÑ",back:"nh·∫π"},
+  // ‚îÄ‚îÄ Page 7: Mother / Sea / Small ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v252",front:"„ÅäÊØç„Åï„Çì",reading:"„Åä„Åã„ÅÇ„Åï„Çì",back:"m·∫π"},
+  {id:"v253",front:"ÊØç„ÅÆÊó•",reading:"„ÅØ„ÅØ„ÅÆ„Å≤",back:"ng√†y c·ªßa m·∫π"},
+  {id:"v254",front:"Á•ñÊØç",reading:"„Åù„Åº",back:"b√† (n·ªôi/ngo·∫°i)"},
+  {id:"v255",front:"ÊØéÊó•",reading:"„Åæ„ÅÑ„Å´„Å°",back:"h·∫±ng ng√†y, m·ªói ng√†y"},
+  {id:"v256",front:"ÊØéÊô©",reading:"„Åæ„ÅÑ„Å∞„Çì",back:"h·∫±ng t·ªëi, m·ªói t·ªëi"},
+  {id:"v257",front:"Êµ∑",reading:"„ÅÜ„Åø",back:"bi·ªÉn (H·∫¢I)",hanViet:"H·∫¢I ‚Äî bi·ªÉn"},
+  {id:"v258",front:"Êµ∑Â§ñ",reading:"„Åã„ÅÑ„Åå„ÅÑ",back:"n∆∞·ªõc ngo√†i (h·∫£i ngo·∫°i)"},
+  {id:"v259",front:"Êµ∑Â≤∏",reading:"„Åã„ÅÑ„Åå„Çì",back:"b·ªù bi·ªÉn"},
+  {id:"v260",front:"Â∞è„Åï„ÅÑ",reading:"„Å°„ÅÑ„Åï„ÅÑ",back:"nh·ªè, b√©"},
+  {id:"v261",front:"Â∞èË™¨",reading:"„Åó„Çá„ÅÜ„Åõ„Å§",back:"ti·ªÉu thuy·∫øt"},
+  {id:"v262",front:"Â∞èÂ≠¶Áîü",reading:"„Åó„Çá„ÅÜ„Åå„Åè„Åõ„ÅÑ",back:"h·ªçc sinh ti·ªÉu h·ªçc"},
+  {id:"v263",front:"Â∞ë„Åó",reading:"„Åô„Åì„Åó",back:"√≠t, m·ªôt ch√∫t"},
+  {id:"v264",front:"Â∞ë„Å™„ÅÑ",reading:"„Åô„Åè„Å™„ÅÑ",back:"√≠t (v·ªÅ s·ªë l∆∞·ª£ng)"},
+  {id:"v265",front:"ÂÜÖ",reading:"„ÅÜ„Å°",back:"b√™n trong, n·ªôi (N·ªòI)",hanViet:"N·ªòI ‚Äî trong, n·ªôi"},
+  {id:"v266",front:"Ê°àÂÜÖ",reading:"„ÅÇ„Çì„Å™„ÅÑ",back:"h∆∞·ªõng d·∫´n, ch·ªâ d·∫´n"},
+  {id:"v267",front:"ËÇâ",reading:"„Å´„Åè",back:"th·ªãt (NH·ª§C)",hanViet:"NH·ª§C ‚Äî th·ªãt"},
+  {id:"v268",front:"Ë±öËÇâ",reading:"„Å∂„Åü„Å´„Åè",back:"th·ªãt l·ª£n"},
+  {id:"v269",front:"ÁâõËÇâ",reading:"„Åé„ÇÖ„ÅÜ„Å´„Åè",back:"th·ªãt b√≤"},
+  {id:"v270",front:"ÁóÖÈô¢",reading:"„Å≥„Çá„ÅÜ„ÅÑ„Çì",back:"b·ªánh vi·ªán"},
+  {id:"v271",front:"ÁóÖÊ∞ó",reading:"„Å≥„Çá„ÅÜ„Åç",back:"b·ªánh t·∫≠t, b·ªã ·ªëm"},
+  {id:"v272",front:"Âêå„Åò",reading:"„Åä„Å™„Åò",back:"gi·ªëng, gi·ªëng nhau"},
+  {id:"v273",front:"Ëä±",reading:"„ÅØ„Å™",back:"hoa (HOA)",hanViet:"HOA ‚Äî hoa"},
+  {id:"v274",front:"„ÅäËå∂",reading:"„Åä„Å°„ÇÉ",back:"tr√†"},
+  {id:"v275",front:"Âñ´Ëå∂Â∫ó",reading:"„Åç„Å£„Åï„Å¶„Çì",back:"qu√°n c√† ph√™, qu√°n gi·∫£i kh√°t"},
+  {id:"v276",front:"Ëå∂ÈÅì",reading:"„Åï„Å©„ÅÜ",back:"tr√† ƒë·∫°o"},
+  {id:"v277",front:"Ëçâ",reading:"„Åè„Åï",back:"c·ªè, c√¢y c·ªè (TH·∫¢O)",hanViet:"TH·∫¢O ‚Äî c·ªè, th·∫£o m·ªôc"},
+  {id:"v278",front:"Ë•ø",reading:"„Å´„Åó",back:"ph√≠a T√¢y (T√ÇY)",hanViet:"T√ÇY ‚Äî ph√≠a t√¢y"},
+  {id:"v279",front:"„ÅäÈÖí",reading:"„Åä„Åï„Åë",back:"r∆∞·ª£u"},
+  {id:"v280",front:"Ê¢ÖÈÖí",reading:"„ÅÜ„ÇÅ„Åó„ÇÖ",back:"r∆∞·ª£u m∆°"},
+  {id:"v281",front:"Èõ®",reading:"„ÅÇ„ÇÅ",back:"m∆∞a (V≈®)",hanViet:"V≈® ‚Äî m∆∞a"},
+  {id:"v282",front:"ÈõªÊ∞ó",reading:"„Åß„Çì„Åç",back:"ƒëi·ªán, b√≥ng ƒë√®n"},
+  {id:"v283",front:"ÈõªË©±",reading:"„Åß„Çì„Çè",back:"ƒëi·ªán tho·∫°i"},
+  {id:"v284",front:"Èõ™",reading:"„ÇÜ„Åç",back:"tuy·∫øt (TUY·∫æT)",hanViet:"TUY·∫æT ‚Äî tuy·∫øt"},
+  {id:"v285",front:"Èõ≤",reading:"„Åè„ÇÇ",back:"m√¢y (V√ÇN)",hanViet:"V√ÇN ‚Äî m√¢y"},
+  // ‚îÄ‚îÄ Page 8: Long / Hair / Body ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v286",front:"Èï∑„ÅÑ",reading:"„Å™„Åå„ÅÑ",back:"d√†i"},
+  {id:"v287",front:"Èï∑Áîü„Åç",reading:"„Å™„Åå„ÅÑ„Åç",back:"s·ªëng l√¢u"},
+  {id:"v288",front:"Ë™≤Èï∑",reading:"„Åã„Å°„Çá„ÅÜ",back:"tr∆∞·ªüng nh√≥m, tr∆∞·ªüng ph√≤ng"},
+  {id:"v289",front:"Á§æÈï∑",reading:"„Åó„ÇÉ„Å°„Çá„ÅÜ",back:"gi√°m ƒë·ªëc"},
+  {id:"v290",front:"È´™„ÅÆÊØõ",reading:"„Åã„Åø„ÅÆ„Åë",back:"t√≥c"},
+  {id:"v291",front:"ÂâçÈ´™",reading:"„Åæ„Åà„Åå„Åø",back:"t√≥c m√°i"},
+  {id:"v292",front:"„ÅäÊâãÊ¥ó„ÅÑ",reading:"„Åä„Å¶„ÅÇ„Çâ„ÅÑ",back:"nh√† v·ªá sinh"},
+  {id:"v293",front:"ÊØõ",reading:"„Åë",back:"l√¥ng (MAO)",hanViet:"MAO ‚Äî l√¥ng, t√≥c"},
+  {id:"v294",front:"ÊØõÁ≥∏",reading:"„Åë„ÅÑ„Å®",back:"s·ª£i len, len"},
+  {id:"v295",front:"Áâõ",reading:"„ÅÜ„Åó",back:"con b√≤ (NG∆ØU)",hanViet:"NG∆ØU ‚Äî tr√¢u, b√≤"},
+  {id:"v296",front:"Áâõ‰π≥",reading:"„Åé„ÇÖ„ÅÜ„Å´„ÇÖ„ÅÜ",back:"s·ªØa b√≤"},
+  {id:"v297",front:"ÊûúÁâ©",reading:"„Åè„Å†„ÇÇ„ÅÆ",back:"hoa qu·∫£"},
+  {id:"v298",front:"Âª∫Áâ©",reading:"„Åü„Å¶„ÇÇ„ÅÆ",back:"t√≤a nh√†, c√¥ng tr√¨nh"},
+  {id:"v299",front:"ÂãïÁâ©",reading:"„Å©„ÅÜ„Å∂„Å§",back:"ƒë·ªông v·∫≠t"},
+  {id:"v300",front:"ÂçàÂâç",reading:"„Åî„Åú„Çì",back:"s√°ng (tr∆∞·ªõc 12h)"},
+  {id:"v301",front:"ÂçàÂæå",reading:"„Åî„Åî",back:"chi·ªÅu (sau 12h)"},
+  {id:"v302",front:"Êù•Âπ¥",reading:"„Çâ„ÅÑ„Å≠„Çì",back:"nƒÉm sau"},
+  {id:"v303",front:"‰∏ÄÂπ¥",reading:"„ÅÑ„Å°„Å≠„Çì",back:"1 nƒÉm"},
+  {id:"v304",front:"Áîü„Åç„Çã",reading:"„ÅÑ„Åç„Çã",back:"s·ªëng"},
+  {id:"v305",front:"Áîü„Åæ„Çå„Çã",reading:"„ÅÜ„Åæ„Çå„Çã",back:"ƒë∆∞·ª£c sinh ra"},
+  {id:"v306",front:"ÁîüÊ¥ª",reading:"„Åõ„ÅÑ„Åã„Å§",back:"cu·ªôc s·ªëng"},
+  {id:"v307",front:"ÂÖÉÊ∞ó„Å™",reading:"„Åí„Çì„Åç„Å™",back:"kh·ªèe m·∫°nh"},
+  {id:"v308",front:"Â§©Ê∞ó",reading:"„Å¶„Çì„Åç",back:"th·ªùi ti·∫øt"},
+  {id:"v309",front:"Ê∞óÊåÅ„Å°",reading:"„Åç„ÇÇ„Å°",back:"c·∫£m x√∫c, t√¢m tr·∫°ng"},
+  {id:"v310",front:"ÂêçÂâç",reading:"„Å™„Åæ„Åà",back:"t√™n"},
+  {id:"v311",front:"Â∏∞„Çä„Åæ„Åô",reading:"„Åã„Åà„Çä„Åæ„Åô",back:"tr·ªü v·ªÅ, v·ªÅ nh√†"},
+  {id:"v312",front:"„ÅäÂ∏∞„Çä„Å™„Åï„ÅÑ",reading:"„Åä„Åã„Åà„Çä„Å™„Åï„ÅÑ",back:"m·ª´ng b·∫°n tr·ªü v·ªÅ"},
+  {id:"v313",front:"Êñ∞„Åó„ÅÑ",reading:"„ÅÇ„Åü„Çâ„Åó„ÅÑ",back:"m·ªõi"},
+  {id:"v314",front:"Ë¶™",reading:"„Åä„ÇÑ",back:"b·ªë/m·∫π (TH√ÇN)",hanViet:"TH√ÇN ‚Äî th√¢n thi·∫øt, b·ªë m·∫π"},
+  {id:"v315",front:"Ë¶™Âàá„Å™",reading:"„Åó„Çì„Åõ„Å§„Å™",back:"t·ªët b·ª•ng, t·ª≠ t·∫ø"},
+  {id:"v316",front:"‰∏°Ë¶™",reading:"„Çä„Çá„ÅÜ„Åó„Çì",back:"b·ªë m·∫π"},
+  {id:"v317",front:"Â¶π",reading:"„ÅÑ„ÇÇ„ÅÜ„Å®",back:"em g√°i (MU·ªòI)",hanViet:"MU·ªòI ‚Äî em g√°i"},
+  {id:"v318",front:"Âßâ",reading:"„ÅÇ„Å≠",back:"ch·ªã g√°i (T·ª∂)",hanViet:"T·ª∂ ‚Äî ch·ªã g√°i"},
+  {id:"v319",front:"ÂßâÂ¶π",reading:"„Åó„Åæ„ÅÑ",back:"ch·ªã em"},
+  {id:"v320",front:"Â§ïÊñπ",reading:"„ÇÜ„ÅÜ„Åå„Åü",back:"ho√†ng h√¥n, chi·ªÅu t·ªëi"},
+  {id:"v321",front:"Â§ö„ÅÑ",reading:"„Åä„Åä„ÅÑ",back:"nhi·ªÅu"},
+  {id:"v322",front:"ÂêçÂà∫",reading:"„ÇÅ„ÅÑ„Åó",back:"danh thi·∫øp"},
+  {id:"v323",front:"ÊúâÂêç„Å™",reading:"„ÇÜ„ÅÜ„ÇÅ„ÅÑ„Å™",back:"n·ªïi ti·∫øng"},
+  {id:"v324",front:"Â§ñ",reading:"„Åù„Å®",back:"b√™n ngo√†i (NGO·∫†I)",hanViet:"NGO·∫†I ‚Äî ngo√†i, b√™n ngo√†i"},
+  {id:"v325",front:"Â§ñÂõΩ",reading:"„Åå„ÅÑ„Åì„Åè",back:"n∆∞·ªõc ngo√†i"},
+  // ‚îÄ‚îÄ Page 9: Spring / Summer / Family ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v326",front:"Êò•",reading:"„ÅØ„Çã",back:"m√πa xu√¢n (XU√ÇN)",hanViet:"XU√ÇN ‚Äî m√πa xu√¢n"},
+  {id:"v327",front:"ÈùíÊò•",reading:"„Åõ„ÅÑ„Åó„ÇÖ„Çì",back:"thanh xu√¢n"},
+  {id:"v328",front:"Ëã•ËÄÖ",reading:"„Çè„Åã„ÇÇ„ÅÆ",back:"gi·ªõi tr·∫ª"},
+  {id:"v329",front:"ÂåªËÄÖ",reading:"„ÅÑ„Åó„ÇÉ",back:"b√°c sƒ©"},
+  {id:"v330",front:"Ëµ∑„Åç„Åæ„Åô",reading:"„Åä„Åç„Åæ„Åô",back:"d·∫≠y"},
+  {id:"v331",front:"Ëµ∑„Åì„Çä„Åæ„Åô",reading:"„Åä„Åì„Çä„Åæ„Åô",back:"x·∫£y ra"},
+  {id:"v332",front:"Ëµ§„ÅÑ",reading:"„ÅÇ„Åã„ÅÑ",back:"ƒë·ªè"},
+  {id:"v333",front:"Ëµ§„Å°„ÇÉ„Çì",reading:"„ÅÇ„Åã„Å°„ÇÉ„Çì",back:"em b√©"},
+  {id:"v334",front:"Âæå„Åß",reading:"„ÅÇ„Å®„Åß",back:"l√°t n·ªØa, ch·ªëc n·ªØa"},
+  {id:"v335",front:"Âæå„Çç",reading:"„ÅÜ„Åó„Çç",back:"ƒë·∫±ng sau, ph√≠a sau"},
+  {id:"v336",front:"Ë°å„Åç„Åæ„Åô",reading:"„ÅÑ„Åç„Åæ„Åô",back:"ƒëi"},
+  {id:"v337",front:"ÂÖÉ„ÅÆ„Å®„Åì„Çç",reading:"„ÇÇ„Å®„ÅÆ„Å®„Åì„Çç",back:"ch·ªó c≈©"},
+  {id:"v338",front:"ÂÖÑ",reading:"„ÅÇ„Å´",back:"anh trai (HUYNH)",hanViet:"HUYNH ‚Äî anh trai"},
+  {id:"v339",front:"„ÅäÂÖÑ„Åï„Çì",reading:"„Åä„Å´„ÅÑ„Åï„Çì",back:"anh trai (khi g·ªçi anh trai ng∆∞·ªùi kh√°c)"},
+  {id:"v340",front:"‰ªä",reading:"„ÅÑ„Åæ",back:"hi·ªán t·∫°i, b√¢y gi·ªù (KIM)",hanViet:"KIM ‚Äî hi·ªán t·∫°i, nay"},
+  {id:"v341",front:"‰ªäÊô©",reading:"„Åì„Çì„Å∞„Çì",back:"t·ªëi nay"},
+  {id:"v342",front:"‰ªäÈÄ±",reading:"„Åì„Çì„Åó„ÇÖ„ÅÜ",back:"tu·∫ßn n√†y"},
+  {id:"v343",front:"Ë©¶Âêà",reading:"„Åó„ÅÇ„ÅÑ",back:"tr·∫≠n thi ƒë·∫•u"},
+  {id:"v344",front:"Â§´",reading:"„Åä„Å£„Å®",back:"ch·ªìng (PHU)",hanViet:"PHU ‚Äî ch·ªìng, ƒë√†n √¥ng"},
+  {id:"v345",front:"Â§ß‰∏àÂ§´„Å™",reading:"„Å†„ÅÑ„Åò„Çá„ÅÜ„Å∂„Å™",back:"kh√¥ng sao, ·ªïn"},
+  {id:"v346",front:"‰∏àÂ§´„Å™",reading:"„Åò„Çá„ÅÜ„Å∂„Å™",back:"ch·∫Øc ch·∫Øn, b·ªÅn"},
+  {id:"v347",front:"ÂåªÂ≠¶",reading:"„ÅÑ„Åå„Åè",back:"y h·ªçc"},
+  {id:"v348",front:"‰ºö„ÅÑ„Åæ„Åô",reading:"„ÅÇ„ÅÑ„Åæ„Åô",back:"g·∫∑p g·ª°, g·∫∑p"},
+  {id:"v349",front:"‰ºöÁ§æÂì°",reading:"„Åã„ÅÑ„Åó„ÇÉ„ÅÑ„Çì",back:"nh√¢n vi√™n c√¥ng ty"},
+  {id:"v350",front:"ÈÅãÂãï‰ºö",reading:"„ÅÜ„Çì„Å©„ÅÜ„Åã„ÅÑ",back:"ƒë·∫°i h·ªôi th·ªÉ thao"},
+  {id:"v351",front:"Áµµ",reading:"„Åà",back:"b·ª©c tranh (H·ªòI)",hanViet:"H·ªòI ‚Äî tranh, h·ªôi h·ªça"},
+  {id:"v352",front:"Â§è",reading:"„Å™„Å§",back:"m√πa h√® (H·∫†)",hanViet:"H·∫† ‚Äî m√πa h√®"},
+  {id:"v353",front:"ÈÅì",reading:"„Åø„Å°",back:"con ƒë∆∞·ªùng (ƒê·∫†O)",hanViet:"ƒê·∫†O ‚Äî ƒë∆∞·ªùng, con ƒë∆∞·ªùng"},
+  {id:"v354",front:"ÂÖàÁîü",reading:"„Åõ„Çì„Åõ„ÅÑ",back:"th·∫ßy/c√¥ gi√°o"},
+  {id:"v355",front:"ÂÖàÈÄ±",reading:"„Åõ„Çì„Åó„ÇÖ„ÅÜ",back:"tu·∫ßn tr∆∞·ªõc"},
+  {id:"v356",front:"ÂÖàÊúà",reading:"„Åõ„Çì„Åí„Å§",back:"th√°ng tr∆∞·ªõc"},
+  {id:"v357",front:"ÂÖâ",reading:"„Å≤„Åã„Çä",back:"√°nh s√°ng (QUANG)",hanViet:"QUANG ‚Äî √°nh s√°ng"},
+  {id:"v358",front:"Âèñ„Çä„Åæ„Åô",reading:"„Å®„Çä„Åæ„Åô",back:"l·∫•y"},
+  {id:"v359",front:"ÂÜ¨",reading:"„Åµ„ÇÜ",back:"m√πa ƒë√¥ng (ƒê√îNG)",hanViet:"ƒê√îNG ‚Äî m√πa ƒë√¥ng"},
+  // ‚îÄ‚îÄ Page 10: Night / High / North ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+  {id:"v360",front:"Â§ú",reading:"„Çà„Çã",back:"bu·ªïi t·ªëi, ƒë√™m (D·∫†)",hanViet:"D·∫† ‚Äî ƒë√™m, ban ƒë√™m"},
+  {id:"v361",front:"‰ªäÂ§ú",reading:"„Åì„Çì„ÇÑ",back:"t·ªëi nay"},
+  {id:"v362",front:"È´ò„ÅÑ",reading:"„Åü„Åã„ÅÑ",back:"cao; ƒë·∫Øt"},
+  {id:"v363",front:"È´òÊ†°Áîü",reading:"„Åì„ÅÜ„Åì„ÅÜ„Åõ„ÅÑ",back:"h·ªçc sinh c·∫•p ba"},
+  {id:"v364",front:"Âøô„Åó„ÅÑ",reading:"„ÅÑ„Åù„Åå„Åó„ÅÑ",back:"b·∫≠n r·ªôn"},
+  {id:"v365",front:"ÊâÄ",reading:"„Å®„Åì„Çç",back:"ch·ªó, n∆°i (S·ªû)",hanViet:"S·ªû ‚Äî ch·ªó, n∆°i ch·ªën"},
+  {id:"v366",front:"ËøëÊâÄ",reading:"„Åç„Çì„Åò„Çá",back:"h√†ng x√≥m"},
+  {id:"v367",front:"Âåó",reading:"„Åç„Åü",back:"ph√≠a B·∫Øc (B·∫ÆC)",hanViet:"B·∫ÆC ‚Äî ph√≠a b·∫Øc"},
+  {id:"v368",front:"ÂåóÈÉ®",reading:"„Åª„Åè„Å∂",back:"mi·ªÅn B·∫Øc"},
+  {id:"v369",front:"ÁôΩ„ÅÑ",reading:"„Åó„Çç„ÅÑ",back:"tr·∫Øng"},
+  {id:"v370",front:"Èªí„ÅÑ",reading:"„Åè„Çç„ÅÑ",back:"ƒëen"},
+  {id:"v371",front:"‰Ωè„ÇÄ",reading:"„Åô„ÇÄ",back:"·ªü, c∆∞ tr√∫"},
+  {id:"v372",front:"‰ΩèÊâÄ",reading:"„Åò„ÇÖ„ÅÜ„Åó„Çá",back:"ƒë·ªãa ch·ªâ"},
+  {id:"v373",front:"ÂõΩ",reading:"„Åè„Å´",back:"ƒë·∫•t n∆∞·ªõc (QU·ªêC)",hanViet:"QU·ªêC ‚Äî n∆∞·ªõc, qu·ªëc gia"},
+  {id:"v374",front:"Êõ∏„Åç„Åæ„Åô",reading:"„Åã„Åç„Åæ„Åô",back:"vi·∫øt"},
+  {id:"v375",front:"ËæûÊõ∏",reading:"„Åò„Åó„Çá",back:"t·ª´ ƒëi·ªÉn"},
+  {id:"v376",front:"Âõ≥Êõ∏È§®",reading:"„Å®„Åó„Çá„Åã„Çì",back:"th∆∞ vi·ªán"},
+  {id:"v377",front:"Ë™¨ÊòéÊõ∏",reading:"„Åõ„Å§„ÇÅ„ÅÑ„Åó„Çá",back:"s√°ch h∆∞·ªõng d·∫´n"},
+  {id:"v378",front:"Â∑ù",reading:"„Åã„Çè",back:"con s√¥ng (XUY√äN)",hanViet:"XUY√äN ‚Äî s√¥ng, xuy√™n qua"},
+  {id:"v379",front:"Âçó",reading:"„Åø„Å™„Åø",back:"ph√≠a Nam (NAM)",hanViet:"NAM ‚Äî ph√≠a nam"},
+  {id:"v380",front:"Âºü",reading:"„Åä„Å®„ÅÜ„Å®",back:"em trai (ƒê·ªÜ)",hanViet:"ƒê·ªÜ ‚Äî em trai"},
+  {id:"v381",front:"ÂÖÑÂºü",reading:"„Åç„Çá„ÅÜ„Å†„ÅÑ",back:"anh em"},
+  {id:"v382",front:"Á©∫",reading:"„Åù„Çâ",back:"b·∫ßu tr·ªùi (KH√îNG)",hanViet:"KH√îNG ‚Äî tr·ªëng, b·∫ßu tr·ªùi"},
+  {id:"v383",front:"Á©∫Ê∞ó",reading:"„Åè„ÅÜ„Åç",back:"kh√¥ng kh√≠"},
+  {id:"v384",front:"Â£∞",reading:"„Åì„Åà",back:"ti·∫øng, gi·ªçng n√≥i (THANH)",hanViet:"THANH ‚Äî ti·∫øng, √¢m thanh"},
+  {id:"v385",front:"Èü≥Â£∞",reading:"„Åä„Çì„Åõ„ÅÑ",back:"√¢m thanh"},
+  {id:"v386",front:"Â∫ó",reading:"„Åø„Åõ",back:"c·ª≠a h√†ng (ƒêI·∫æM)",hanViet:"ƒêI·∫æM ‚Äî c·ª≠a h√†ng, qu√°n"},
+  {id:"v387",front:"Â∫óÂì°",reading:"„Å¶„Çì„ÅÑ„Çì",back:"nh√¢n vi√™n c·ª≠a h√†ng"},
 ];
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // CARD INSTANCE GENERATION
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 const VOCAB_MAP = Object.fromEntries(VOCAB_DATA.map(v => [v.id, v]));
 
 function getCardTypes(vocab) {
@@ -1143,9 +1157,9 @@ for (const v of VOCAB_DATA) {
   }
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // STORAGE
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 const CARD_KEY  = "jp_srm_cards_v3";
 const META_KEY  = "jp_srm_meta_v3";
 const SETT_KEY  = "jp_srm_settings_v3";
@@ -1155,9 +1169,9 @@ function saveCardState(s) { localStorage.setItem(CARD_KEY, JSON.stringify(s)); }
 function loadMeta() { try { return JSON.parse(localStorage.getItem(META_KEY) || "{}"); } catch { return {}; } }
 function saveMeta(m) { localStorage.setItem(META_KEY, JSON.stringify(m)); }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SETTINGS
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 let settings = {
   newPerDay:    10,
   reviewLimit: 200,
@@ -1185,26 +1199,26 @@ function saveSettings() {
   localStorage.setItem(SETT_KEY, JSON.stringify(settings));
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // THEME
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function applyTheme() {
   const theme = localStorage.getItem("theme") || "day";
   document.body.className = theme;
-  document.getElementById("theme-toggle").textContent = theme === "day" ? "🌙" : "☀️";
+  document.getElementById("theme-toggle").textContent = theme === "day" ? "üåô" : "‚òÄÔ∏è";
 }
 
 function toggleTheme() {
   const isDay = document.body.classList.contains("day");
   const next  = isDay ? "night" : "day";
   document.body.className = next;
-  document.getElementById("theme-toggle").textContent = isDay ? "☀️" : "🌙";
+  document.getElementById("theme-toggle").textContent = isDay ? "‚òÄÔ∏è" : "üåô";
   localStorage.setItem("theme", next);
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SM-2 ALGORITHM
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function todayStr() {
   const d = new Date();
   const y = d.getFullYear();
@@ -1240,9 +1254,9 @@ function sm2Update(cs, rating) {
   return { interval, easeFactor, repetitions, nextReview: d.toISOString().slice(0, 10) };
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SESSION STATE
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 let session = {
   queue: [], idx: 0, revealed: false,
   currentVocab: null, currentType: null,
@@ -1295,9 +1309,9 @@ function markStudiedToday() {
   saveMeta(meta);
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // STATS UI
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function updateStats() {
   const today = todayStr();
   const cs    = loadCardState();
@@ -1321,21 +1335,21 @@ function updateProgress() {
   const done  = session.idx;
   const pct   = total ? Math.round((done / total) * 100) : 100;
   document.getElementById("progress-fill").style.width = pct + "%";
-  document.getElementById("progress-label").textContent = `${done} / ${total} thẻ hôm nay`;
+  document.getElementById("progress-label").textContent = `${done} / ${total} th·∫ª h√¥m nay`;
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // CARD DISPLAY
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 const BADGE = {
-  reading: { text: "📖 Cách đọc", cls: "badge-blue" },
-  hanviet: { text: "🈲 Hán Việt",  cls: "badge-red"  },
-  meaning: { text: "💬 Nghĩa",    cls: "badge-green" }
+  reading: { text: "üìñ C√°ch ƒë·ªçc", cls: "badge-blue" },
+  hanviet: { text: "üà≤ H√°n Vi·ªát",  cls: "badge-red"  },
+  meaning: { text: "üí¨ Nghƒ©a",    cls: "badge-green" }
 };
 const PROMPT = {
-  reading: "読み方 — Đọc từ này như thế nào?",
-  hanviet: "漢字 — Nghĩa Hán Việt của chữ này là gì?",
-  meaning: "意味 — Nghĩa tiếng Việt của từ này là gì?"
+  reading: "Ë™≠„ÅøÊñπ ‚Äî ƒê·ªçc t·ª´ n√†y nh∆∞ th·∫ø n√†o?",
+  hanviet: "Êº¢Â≠ó ‚Äî Nghƒ©a H√°n Vi·ªát c·ªßa ch·ªØ n√†y l√† g√¨?",
+  meaning: "ÊÑèÂë≥ ‚Äî Nghƒ©a ti·∫øng Vi·ªát c·ªßa t·ª´ n√†y l√† g√¨?"
 };
 
 function el(id) { return document.getElementById(id); }
@@ -1466,9 +1480,9 @@ function showDone() {
   el("session-done").classList.add("visible");
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // UPCOMING PANEL
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 let upcomingFilter = "all";
 let expandedDays   = new Set();
 
@@ -1499,8 +1513,8 @@ function dateStrFromOffset(offset) {
 }
 
 function getDayLabel(offset) {
-  if (offset === 0) return "Hôm nay";
-  if (offset === 1) return "Ngày mai";
+  if (offset === 0) return "H√¥m nay";
+  if (offset === 1) return "Ng√†y mai";
   const d = new Date();
   d.setDate(d.getDate() + offset);
   const dow = ["CN","T2","T3","T4","T5","T6","T7"][d.getDay()];
@@ -1526,9 +1540,9 @@ function getSchedule() {
 }
 
 function getEaseLabel(ef) {
-  if (ef >= 2.5) return { text: "Dễ",         cls: "ease-easy" };
-  if (ef >= 1.8) return { text: "Bình thường", cls: "ease-ok"   };
-  return               { text: "Khó",          cls: "ease-hard"  };
+  if (ef >= 2.5) return { text: "D·ªÖ",         cls: "ease-easy" };
+  if (ef >= 1.8) return { text: "B√¨nh th∆∞·ªùng", cls: "ease-ok"   };
+  return               { text: "Kh√≥",          cls: "ease-hard"  };
 }
 
 function instMatchesFilter(inst) {
@@ -1539,7 +1553,7 @@ function renderUpcoming() {
   const cs       = loadCardState();
   const schedule = getSchedule();
 
-  // ── Today summary (always unfiltered) ──────────
+  // ‚îÄ‚îÄ Today summary (always unfiltered) ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
   const todayCards  = schedule[0].cards;
   const newCount    = todayCards.filter(i => !cs[i.id]).length;
   const reviewCount = todayCards.length - newCount;
@@ -1547,34 +1561,34 @@ function renderUpcoming() {
   el("up-sum-new").textContent    = newCount;
   el("up-sum-review").textContent = reviewCount;
 
-  // ── Start button ───────────────────────────────
+  // ‚îÄ‚îÄ Start button ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
   const startBtn = el("up-start-btn");
   if (todayCards.length > 0) {
-    startBtn.textContent = `▶ Bắt đầu ôn tập hôm nay (${todayCards.length} thẻ)`;
+    startBtn.textContent = `‚ñ∂ B·∫Øt ƒë·∫ßu √¥n t·∫≠p h√¥m nay (${todayCards.length} th·∫ª)`;
     startBtn.disabled    = false;
   } else {
-    startBtn.textContent = "Không có thẻ hôm nay";
+    startBtn.textContent = "Kh√¥ng c√≥ th·∫ª h√¥m nay";
     startBtn.disabled    = true;
   }
 
-  // ── Bar chart max (filtered counts) ───────────
+  // ‚îÄ‚îÄ Bar chart max (filtered counts) ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
   const filteredCounts = schedule.map(d => d.cards.filter(instMatchesFilter).length);
   const maxCount       = Math.max(1, ...filteredCounts);
 
-  // ── Day rows ───────────────────────────────────
+  // ‚îÄ‚îÄ Day rows ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
   const scroll = el("up-scroll");
   scroll.innerHTML = "";
 
   const totalFiltered = filteredCounts.reduce((a, b) => a + b, 0);
   if (totalFiltered === 0) {
-    scroll.innerHTML = `<div class="up-empty">✅ Không có thẻ nào sắp đến hạn trong 7 ngày tới</div>`;
+    scroll.innerHTML = `<div class="up-empty">‚úÖ Kh√¥ng c√≥ th·∫ª n√†o s·∫Øp ƒë·∫øn h·∫°n trong 7 ng√†y t·ªõi</div>`;
     return;
   }
 
   const BADGE = {
-    reading: { icon: "📖", cls: "badge-blue"  },
-    hanviet: { icon: "🈲", cls: "badge-red"   },
-    meaning: { icon: "💬", cls: "badge-green" }
+    reading: { icon: "üìñ", cls: "badge-blue"  },
+    hanviet: { icon: "üà≤", cls: "badge-red"   },
+    meaning: { icon: "üí¨", cls: "badge-green" }
   };
 
   schedule.forEach((day, i) => {
@@ -1587,14 +1601,14 @@ function renderUpcoming() {
     const isExpanded = expandedDays.has(i);
 
     const cardListHTML = filtered.length === 0
-      ? `<div style="font-size:0.78rem;color:var(--text-muted);padding:4px 2px">Không có thẻ loại này</div>`
+      ? `<div style="font-size:0.78rem;color:var(--text-muted);padding:4px 2px">Kh√¥ng c√≥ th·∫ª lo·∫°i n√†y</div>`
       : filtered.map(inst => {
           const v     = VOCAB_MAP[inst.vocabId];
           const state = cs[inst.id];
           const bi    = BADGE[inst.type];
           const intervalTxt = state
-            ? (state.interval <= 1 ? "Ôn lại sau: 1 ngày" : `Ôn lại sau: ${state.interval} ngày`)
-            : "🆕 Thẻ mới";
+            ? (state.interval <= 1 ? "√în l·∫°i sau: 1 ng√†y" : `√în l·∫°i sau: ${state.interval} ng√†y`)
+            : "üÜï Th·∫ª m·ªõi";
           const easeHTML = state
             ? (() => { const e = getEaseLabel(state.easeFactor); return `<span class="ease-badge ${e.cls}">${e.text}</span>`; })()
             : "";
@@ -1622,7 +1636,7 @@ function renderUpcoming() {
           <div class="up-bar" style="width:${pct}%"></div>
         </div>
         <span class="up-day-count">${filtered.length}</span>
-        <span class="up-day-chevron">›</span>
+        <span class="up-day-chevron">‚Ä∫</span>
       </div>
       <div class="up-card-list">${cardListHTML}</div>`;
     scroll.appendChild(row);
@@ -1646,23 +1660,65 @@ function startTodaySession() {
   closeUpcoming();
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SETTINGS PANEL
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function openSettings()  { el("settings-overlay").classList.add("visible"); }
 function closeSettings() { el("settings-overlay").classList.remove("visible"); }
 function closeSettingsIfOutside(e) { if (e.target === el("settings-overlay")) closeSettings(); }
 
 function resetAll() {
-  if (!confirm("Xoá toàn bộ tiến trình? Không thể hoàn tác.")) return;
+  if (!confirm("Xo√° to√†n b·ªô ti·∫øn tr√¨nh? Kh√¥ng th·ªÉ ho√†n t√°c.")) return;
   localStorage.removeItem(CARD_KEY);
   localStorage.removeItem(META_KEY);
   location.reload();
 }
 
-// ═══════════════════════════════════════════════
+// ‚îÄ‚îÄ Export / Import ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ‚îÄ
+function exportProgress() {
+  const data = {
+    version:  3,
+    exported: new Date().toISOString(),
+    cards:    localStorage.getItem(CARD_KEY)    || "{}",
+    meta:     localStorage.getItem(META_KEY)    || "{}",
+    settings: localStorage.getItem(SETT_KEY)|| "{}",
+    theme:    localStorage.getItem("theme")     || "day"
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement("a");
+  const date = todayStr();
+  a.href     = url;
+  a.download = `kanji-progress-${date}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importProgress(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (!data.version || !data.cards) throw new Error("File kh√¥ng h·ª£p l·ªá");
+      if (!confirm(`Import ti·∫øn tr√¨nh t·ª´ ${data.exported ? data.exported.slice(0,10) : "file n√†y"}?\nD·ªØ li·ªáu hi·ªán t·∫°i s·∫Ω b·ªã ghi ƒë√®.`)) return;
+      localStorage.setItem(CARD_KEY,     data.cards);
+      localStorage.setItem(META_KEY,     data.meta     || "{}");
+      localStorage.setItem(SETT_KEY, data.settings || "{}");
+      if (data.theme) localStorage.setItem("theme", data.theme);
+      location.reload();
+    } catch(err) {
+      alert("Kh√¥ng ƒë·ªçc ƒë∆∞·ª£c file: " + err.message);
+    }
+  };
+  reader.readAsText(file);
+  event.target.value = ""; // reset input ƒë·ªÉ import l·∫°i ƒë∆∞·ª£c
+}
+
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // KEYBOARD
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
     if (el("upcoming-panel").classList.contains("open")) { closeUpcoming(); return; }
@@ -1678,12 +1734,12 @@ document.addEventListener("keydown", e => {
   else if (e.key === "4") rate(4);
 });
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // PWA MANIFEST
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 (function() {
   const manifest = {
-    name: "Ôn Kanji N5", short_name: "Kanji SRM",
+    name: "√în Kanji N5", short_name: "Kanji SRM",
     start_url: ".", display: "standalone",
     background_color: "#FAF8F3", theme_color: "#B07A30",
     icons: []
@@ -1693,9 +1749,9 @@ document.addEventListener("keydown", e => {
   if (link) link.href = URL.createObjectURL(blob);
 })();
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // STEPPER BUTTONS
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function stepperChange(id, delta, min, max) {
   const inp = el(id);
   const val = Math.min(max, Math.max(min, (parseInt(inp.value) || 0) + delta));
@@ -1703,9 +1759,9 @@ function stepperChange(id, delta, min, max) {
   saveSettings();
 }
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // SWIPE-TO-DISMISS (bottom sheets)
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 (function() {
   function addSwipeDismiss(panelId, closeFn) {
     const panel = document.getElementById(panelId);
@@ -1724,9 +1780,9 @@ function stepperChange(id, delta, min, max) {
   addSwipeDismiss('settings-panel', () => closeSettings());
 })();
 
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 // INIT
-// ═══════════════════════════════════════════════
+// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
 function init() {
   applyTheme();
   loadSettings();
